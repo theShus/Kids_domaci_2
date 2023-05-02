@@ -13,6 +13,7 @@ import app.AppConfig;
 import app.Cancellable;
 import app.snapshot_bitcake.SnapshotCollector;
 import app.snapshot_bitcake.SnapshotType;
+import servent.handler.CausalMessageHandler;
 import servent.handler.MessageHandler;
 import servent.handler.NullHandler;
 import servent.handler.TransactionHandler;
@@ -55,35 +56,13 @@ public class SimpleServentListener implements Runnable, Cancellable {
 		while (working) {
 			try {
 				Message clientMessage;
-
-				/*
-				 * This blocks for up to 1s, after which SocketTimeoutException is thrown.
-				 */
 				Socket clientSocket = listenerSocket.accept();
-
-				//GOT A MESSAGE! <3
 				clientMessage = MessageUtil.readMessage(clientSocket);
 
-
-				
-				MessageHandler messageHandler = new NullHandler(clientMessage);
-				
-				/*
-				 * Each message type has it's own handler.
-				 * If we can get away with stateless handlers, we will,
-				 * because that way is much simpler and less error prone.
-				 */
-				switch (clientMessage.getMessageType()) {
-				case TRANSACTION:
-					messageHandler = new TransactionHandler(clientMessage, snapshotCollector.getBitcakeManager());
-					break;
-
-				case POISON:
-					break;
-				}
-				
+				MessageHandler messageHandler = new CausalMessageHandler(clientMessage, !AppConfig.IS_CLIQUE, snapshotCollector);
 				threadPool.submit(messageHandler);
-			} catch (SocketTimeoutException timeoutEx) {
+			}
+			catch (SocketTimeoutException timeoutEx) {
 				//Uncomment the next line to see that we are waking up every second.
 //				AppConfig.timedStandardPrint("Waiting...");
 			} catch (IOException e) {

@@ -1,7 +1,3 @@
 transaction_burst
 pause 500
-bitcake_info
-pause 45000
-print_vector_clock
-pause 2000
 stop

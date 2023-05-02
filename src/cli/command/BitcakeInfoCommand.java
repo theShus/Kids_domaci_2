@@ -1,5 +1,6 @@
 package cli.command;
 
+import app.AppConfig;
 import app.snapshot_bitcake.SnapshotCollector;
 
 public class BitcakeInfoCommand implements CLICommand {
@@ -16,8 +17,11 @@ public class BitcakeInfoCommand implements CLICommand {
 	}
 
 	@Override
-	public void execute(String args) {
-		collector.startCollecting();
+	public void execute(String args) {//todo
+		if(!collector.isCollecting())
+			collector.startCollecting();
+		else
+			AppConfig.timestampedErrorPrint("Already collecting");
 
 	}
 

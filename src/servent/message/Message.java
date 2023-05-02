@@ -2,6 +2,7 @@ package servent.message;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 import app.ServentInfo;
 
@@ -32,75 +33,32 @@ import app.ServentInfo;
  */
 public interface Message extends Serializable {
 
-	/**
-	 * Information about the original sender. If <code>makeMeASender</code> is invoked
-	 * on this object, this attribute will not be changed.
-	 */
 	ServentInfo getOriginalSenderInfo();
-	
-	/**
-	 * If a servent uses <code>makeMeASender</code> when resending a message, it will
-	 * be added to this list. So we can use this to see how this message got to us.
-	 */
+
+	ServentInfo getOriginalReceiverInfo();
+
 	List<ServentInfo> getRoute();
-	
-	/**
-	 * Information about the receiver of the message.
-	 */
+
 	ServentInfo getReceiverInfo();
-	
-	/**
-	 * Message color - white means that the message was sent before a local snapshot
-	 * was created, and red (non-white) means it is after.
-	 */
-	boolean isWhite();
-	
-	/**
-	 * Message type. Mainly used to decide which handler will work on this message.
-	 */
+
+//	boolean isWhite();
+
 	MessageType getMessageType();
-	
-	/**
-	 * The body of the message. Use this to see what your neighbors have sent you.
-	 */
+
 	String getMessageText();
-	
-	/**
-	 * An id that is unique per servent. Combined with servent id, it will be unique
-	 * in the system.
-	 */
+
 	int getMessageId();
 
-	/**
-	 * Alters the message and returns a new copy with everything intact, except
-	 * the current node being added to the route list.
-	 */
 	Message makeMeASender();
-	
-	/**
-	 * Alters the message and returns a new copy with everything intact, except
-	 * the receiver being changed to the one with the specified <code>id</code>.
-	 */
+
 	Message changeReceiver(Integer newReceiverId);
-	
-	/**
-	 * Alters the message and returns a new copy with everything intact, except
-	 * the color being changed to red.
-	 */
-	Message setRedColor();
-	
-	/**
-	 * Alters the message and returns a new copy with everything intact, except
-	 * the color being changed to white.
-	 */
-	Message setWhiteColor();
-	
-	/**
-	 * This method is invoked by the frameworks sender code. It is invoked
-	 * exactly before the message is being sent. If the message was held up
-	 * by an event or a queue, this ensures that we perform the effect as
-	 * we are sending the message.
-	 */
+
+//	Message setRedColor();
+
+//	Message setWhiteColor();
+
 	void sendEffect();
-	
+
+	Map<Integer, Integer> getSenderVectorClock();
+
 }

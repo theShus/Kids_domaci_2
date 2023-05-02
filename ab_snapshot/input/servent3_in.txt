@@ -1,4 +1,2 @@
-pause 45000
-print_vector_clock
-pause 2000
+pause 25000
 stop

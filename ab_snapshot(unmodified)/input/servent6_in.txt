@@ -1,0 +1,6 @@
+pause 2000
+transaction_burst
+pause 40000
+print_vector_clock
+pause 2000
+stop

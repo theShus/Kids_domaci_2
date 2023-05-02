@@ -1,5 +1,6 @@
 package servent.message;
 
 public enum MessageType {
-	POISON, TRANSACTION,
+	POISON, TRANSACTION, CAUSAL_BROADCAST,
+	AB_TOKEN, AB_TELL,
 }

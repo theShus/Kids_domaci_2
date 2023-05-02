@@ -59,10 +59,10 @@ public class MultipleServentStarter {
 	 * The parameter for this function should be the name of a directory that
 	 * contains a servent_list.properties file which will describe our distributed system.
 	 */
-	private static void startServentTest(String testName) {
+	private static void startServentTest(String snapshotFolderName) {
 		List<Process> serventProcesses = new ArrayList<>();
 		
-		AppConfig.readConfig(testName+"/servent_list.properties");
+		AppConfig.readConfig(snapshotFolderName+"/servent_list.properties");
 		
 		AppConfig.timestampedStandardPrint("Starting multiple servent runner. If servents do not finish on their own, type \"stop\" to finish them");
 		
@@ -71,13 +71,13 @@ public class MultipleServentStarter {
 		for(int i = 0; i < serventCount; i++) {
 			try {
 				ProcessBuilder builder = new ProcessBuilder("java", "-cp", "out\\production\\KiDS-Domaci2-kostur", "app.ServentMain",
-						testName+"/servent_list.properties", String.valueOf(i));
+						snapshotFolderName+"/servent_list.properties", String.valueOf(i));
 				
 				//We use files to read and write.
 				//System.out, System.err and System.in will point to these files.
-				builder.redirectOutput(new File(testName+"/output/servent" + i + "_out.txt"));
-				builder.redirectError(new File(testName+"/error/servent" + i + "_err.txt"));
-				builder.redirectInput(new File(testName+"/input/servent" + i + "_in.txt"));
+				builder.redirectOutput(new File(snapshotFolderName+"/output/servent" + i + "_out.txt"));
+				builder.redirectError(new File(snapshotFolderName+"/error/servent" + i + "_err.txt"));
+				builder.redirectInput(new File(snapshotFolderName+"/input/servent" + i + "_in.txt"));
 				
 				//Starts the servent as a completely separate process.
 				Process p = builder.start();
@@ -103,7 +103,10 @@ public class MultipleServentStarter {
 	}
 	
 	public static void main(String[] args) {
-		startServentTest("snapshot-primer");
+//		startServentTest("snapshot-primer");
+
+		startServentTest("ab_snapshot");
+//		startServentTest("av_snapshot");
 	}
 
 }

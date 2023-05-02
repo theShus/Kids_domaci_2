@@ -74,7 +74,7 @@ public class MessageUtil {
 
     public static void sendMessage(Message message) {
         Thread delayedSender = new Thread(new DelayedMessageSender(message));
-
         delayedSender.start();
     }
+
 }
