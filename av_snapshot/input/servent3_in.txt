@@ -1,0 +1,4 @@
+pause 45000
+print_vector_clock
+pause 2000
+stop

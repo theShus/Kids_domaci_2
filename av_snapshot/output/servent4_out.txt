@@ -1,0 +1,14 @@
+KURACCCC
+18:01:48 - Starting servent [4|localhost|1500]
+18:01:48 - Pausing for 500 ms
+18:01:49 - Pausing for 45000 ms
+18:02:34 - 142
+18:02:34 - 199
+18:02:34 - 196
+18:02:34 - 1
+18:02:34 - 101
+18:02:34 - 143
+18:02:34 - 201
+18:02:34 - Pending messages are empty: false
+18:02:34 - Pausing for 2000 ms
+18:02:36 - Stopping...

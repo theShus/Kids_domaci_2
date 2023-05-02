@@ -1,0 +1,7 @@
+pause 1000
+transaction_burst
+pause 25000
+bitcake_info
+pause 20000
+print_vector_clock
+stop
