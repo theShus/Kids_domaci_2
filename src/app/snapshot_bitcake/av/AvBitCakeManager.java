@@ -10,7 +10,7 @@ public class AvBitCakeManager implements BitcakeManager {
     private final AtomicInteger currentAmount = new AtomicInteger(1000);
     private int recordedAmount;
     private int initiatorId;
-    private Map<Integer, Integer> tokenVectorClock = null;
+    private final Map<Integer, Integer> tokenVectorClock = null;
 
 
     @Override

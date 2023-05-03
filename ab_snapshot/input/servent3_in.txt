@@ -1,2 +1,3 @@
-pause 25000
+pause 30000
+info
 stop

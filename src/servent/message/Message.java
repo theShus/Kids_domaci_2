@@ -1,10 +1,10 @@
 package servent.message;
 
+import app.ServentInfo;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
-
-import app.ServentInfo;
 
 /**
  * This is your basic message. It should cover most needs.
@@ -28,37 +28,37 @@ import app.ServentInfo;
  * 		</ul>
  * 	<li>Equality and hashability based on message id and original sender id</li>
  * </ul>
- * @author bmilojkovic
  *
+ * @author bmilojkovic
  */
 public interface Message extends Serializable {
 
-	ServentInfo getOriginalSenderInfo();
+    ServentInfo getOriginalSenderInfo();
 
-	ServentInfo getOriginalReceiverInfo();
+    ServentInfo getOriginalReceiverInfo();
 
-	List<ServentInfo> getRoute();
+    List<ServentInfo> getRoute();
 
-	ServentInfo getReceiverInfo();
+    ServentInfo getReceiverInfo();
 
 //	boolean isWhite();
 
-	MessageType getMessageType();
+    MessageType getMessageType();
 
-	String getMessageText();
+    String getMessageText();
 
-	int getMessageId();
+    int getMessageId();
 
-	Message makeMeASender();
+    Message makeMeASender();
 
-	Message changeReceiver(Integer newReceiverId);
+    Message changeReceiver(Integer newReceiverId);
 
 //	Message setRedColor();
 
 //	Message setWhiteColor();
 
-	void sendEffect();
+    void sendEffect();
 
-	Map<Integer, Integer> getSenderVectorClock();
+    Map<Integer, Integer> getSenderVectorClock();
 
 }

@@ -9,8 +9,8 @@ import servent.message.MessageType;
 
 public class TransactionHandler implements MessageHandler {
 
-    private Message clientMessage;
-    private BitcakeManager bitcakeManager;
+    private final Message clientMessage;
+    private final BitcakeManager bitcakeManager;
 
     public TransactionHandler(Message clientMessage, BitcakeManager bitcakeManager) {
         this.clientMessage = clientMessage;
@@ -25,8 +25,7 @@ public class TransactionHandler implements MessageHandler {
             int amountNumber = 0;
             try {
                 amountNumber = Integer.parseInt(amountString);
-            }
-            catch (NumberFormatException e) {
+            } catch (NumberFormatException e) {
                 AppConfig.timestampedErrorPrint("Couldn't parse amount: " + amountString);
                 return;
             }
@@ -34,19 +33,15 @@ public class TransactionHandler implements MessageHandler {
             bitcakeManager.addSomeBitcakes(amountNumber);
 
             synchronized (AppConfig.syncHole) {
-                if (bitcakeManager instanceof AbBitCakeManager) {
-                    AbBitCakeManager abBitcakeManager = (AbBitCakeManager) bitcakeManager;
+                if (bitcakeManager instanceof AbBitCakeManager abBitcakeManager) {
                     //todo proveri
                     abBitcakeManager.recordGetTransaction(clientMessage.getOriginalSenderInfo().getId(), amountNumber);
-                }
-                else if (bitcakeManager instanceof AvBitCakeManager) {
-                    AvBitCakeManager avBitcakeManager = (AvBitCakeManager) bitcakeManager;
+                } else if (bitcakeManager instanceof AvBitCakeManager avBitcakeManager) {
                     //todo proveri
                     avBitcakeManager.recordGetTransaction(clientMessage.getSenderVectorClock(), clientMessage.getOriginalSenderInfo().getId(), amountNumber);
                 }
             }
-        }
-        else {
+        } else {
             AppConfig.timestampedErrorPrint("Transaction handler got: " + clientMessage);
         }
 

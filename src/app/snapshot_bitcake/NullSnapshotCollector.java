@@ -4,34 +4,36 @@ import app.snapshot_bitcake.ab.AbSnapshotResult;
 
 /**
  * This class is used if the user hasn't specified a snapshot type in config.
- * 
- * @author bmilojkovic
  *
+ * @author bmilojkovic
  */
 public class NullSnapshotCollector implements SnapshotCollector {
 
-	@Override
-	public void run() {}
+    @Override
+    public void run() {
+    }
 
-	@Override
-	public void stop() {}
+    @Override
+    public void stop() {
+    }
 
-	@Override
-	public BitcakeManager getBitcakeManager() {
-		return null;
-	}
+    @Override
+    public BitcakeManager getBitcakeManager() {
+        return null;
+    }
 
-	@Override
-	public void addAbSnapshotInfo(int id, AbSnapshotResult abSnapshotResult) {
+    @Override
+    public void addAbSnapshotInfo(int id, AbSnapshotResult abSnapshotResult) {
 
-	}
+    }
 
-	@Override
-	public void startCollecting() {}
+    @Override
+    public void startCollecting() {
+    }
 
-	@Override
-	public boolean isCollecting() {
-		return false;
-	}
+    @Override
+    public boolean isCollecting() {
+        return false;
+    }
 
 }

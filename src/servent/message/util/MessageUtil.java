@@ -1,5 +1,8 @@
 package servent.message.util;
 
+import app.AppConfig;
+import servent.message.Message;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -8,10 +11,6 @@ import java.util.Map;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
-
-import app.AppConfig;
-import servent.message.Message;
-import servent.message.MessageType;
 
 /**
  * For now, just the read and send implementation, based on Java serializing.

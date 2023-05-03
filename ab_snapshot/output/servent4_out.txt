@@ -1,105 +1,395 @@
-22:55:29 - Starting servent [4|localhost|1500]
-KURAC
-true
-22:55:29 - Pausing for 500 ms
-22:55:30 - Stopping...
-22:55:30 - Sending message [4|91|3|TRANSACTION|5]
-22:55:30 - Sending message [4|8|6|TRANSACTION|3]
-22:55:30 - Sending message [4|84|5|TRANSACTION|5]
-22:55:30 - Sending message [4|63|2|TRANSACTION|3]
-22:55:30 - Sending message [4|51|4|TRANSACTION|5]
-22:55:30 - Sending message [4|25|8|TRANSACTION|3]
-22:55:30 - Sending message [4|32|10|TRANSACTION|5]
-22:55:30 - Sending message [4|49|6|TRANSACTION|3]
-22:55:30 - Sending message [4|69|8|TRANSACTION|3]
-22:55:30 - Sending message [4|11|6|TRANSACTION|5]
-22:55:30 - Sending message [4|41|4|TRANSACTION|3]
-22:55:30 - Sending message [4|56|6|TRANSACTION|5]
-22:55:30 - Sending message [4|28|8|TRANSACTION|5]
-22:55:30 - Sending message [4|15|3|TRANSACTION|5]
-22:55:30 - Sending message [4|31|3|TRANSACTION|5]
-22:55:30 - Sending message [4|18|5|TRANSACTION|3]
-22:55:30 - Sending message [4|33|2|TRANSACTION|5]
-22:55:30 - Sending message [4|34|6|TRANSACTION|5]
-22:55:30 - Sending message [4|90|9|TRANSACTION|3]
-22:55:30 - Sending message [4|93|10|TRANSACTION|5]
-22:55:30 - Sending message [4|60|10|TRANSACTION|5]
-22:55:30 - Sending message [4|44|3|TRANSACTION|3]
-22:55:30 - Sending message [4|74|2|TRANSACTION|3]
-22:55:30 - Sending message [4|94|3|TRANSACTION|3]
-22:55:30 - Sending message [4|89|5|TRANSACTION|3]
-22:55:30 - Sending message [4|75|2|TRANSACTION|5]
-22:55:30 - Sending message [4|81|4|TRANSACTION|3]
-22:55:30 - Sending message [4|72|8|TRANSACTION|5]
-22:55:30 - Sending message [4|65|8|TRANSACTION|3]
-22:55:30 - Sending message [4|97|10|TRANSACTION|5]
-22:55:30 - Sending message [4|53|1|TRANSACTION|5]
-22:55:30 - Sending message [4|26|9|TRANSACTION|3]
-22:55:30 - Sending message [4|6|4|TRANSACTION|3]
-22:55:30 - Sending message [4|48|1|TRANSACTION|5]
-22:55:30 - Sending message [4|40|2|TRANSACTION|5]
-22:55:30 - Sending message [4|13|6|TRANSACTION|5]
-22:55:30 - Sending message [4|82|6|TRANSACTION|3]
-22:55:30 - Sending message [4|21|4|TRANSACTION|3]
-22:55:30 - Sending message [4|22|5|TRANSACTION|3]
-22:55:30 - Sending message [4|3|9|TRANSACTION|3]
-22:55:30 - Sending message [4|80|10|TRANSACTION|5]
-22:55:30 - Sending message [4|62|6|TRANSACTION|3]
-22:55:30 - Sending message [4|68|2|TRANSACTION|5]
-22:55:30 - Sending message [4|14|3|TRANSACTION|5]
-22:55:30 - Sending message [4|5|9|TRANSACTION|3]
-22:55:30 - Sending message [4|83|4|TRANSACTION|3]
-22:55:30 - Sending message [4|59|6|TRANSACTION|5]
-22:55:30 - Sending message [4|23|6|TRANSACTION|3]
-22:55:30 - Sending message [4|58|6|TRANSACTION|3]
-22:55:30 - Sending message [4|7|1|TRANSACTION|3]
-22:55:30 - Sending message [4|46|6|TRANSACTION|3]
-22:55:30 - Sending message [4|45|2|TRANSACTION|3]
-22:55:30 - Sending message [4|27|2|TRANSACTION|3]
-22:55:30 - Sending message [4|54|9|TRANSACTION|5]
-22:55:30 - Sending message [4|10|9|TRANSACTION|5]
-22:55:30 - Sending message [4|9|10|TRANSACTION|3]
-22:55:30 - Sending message [4|85|2|TRANSACTION|3]
-22:55:30 - Sending message [4|76|4|TRANSACTION|3]
-22:55:30 - Sending message [4|29|6|TRANSACTION|3]
-22:55:30 - Sending message [4|55|6|TRANSACTION|5]
-22:55:30 - Sending message [4|95|5|TRANSACTION|5]
-22:55:30 - Sending message [4|99|2|TRANSACTION|5]
-22:55:30 - Sending message [4|50|6|TRANSACTION|3]
-22:55:30 - Sending message [4|2|6|TRANSACTION|3]
-22:55:30 - Sending message [4|78|7|TRANSACTION|3]
-22:55:30 - Sending message [4|38|3|TRANSACTION|3]
-22:55:30 - Sending message [4|17|6|TRANSACTION|5]
-22:55:30 - Sending message [4|19|5|TRANSACTION|5]
-22:55:30 - Sending message [4|73|3|TRANSACTION|5]
-22:55:30 - Sending message [4|39|6|TRANSACTION|5]
-22:55:30 - Sending message [4|35|3|TRANSACTION|5]
-22:55:30 - Sending message [4|36|8|TRANSACTION|5]
-22:55:30 - Sending message [4|61|1|TRANSACTION|3]
-22:55:30 - Sending message [4|30|3|TRANSACTION|3]
-22:55:30 - Sending message [4|20|5|TRANSACTION|5]
-22:55:30 - Sending message [4|79|8|TRANSACTION|5]
-22:55:30 - Sending message [4|88|4|TRANSACTION|5]
-22:55:30 - Sending message [4|16|9|TRANSACTION|5]
-22:55:30 - Sending message [4|67|6|TRANSACTION|3]
-22:55:30 - Sending message [4|66|6|TRANSACTION|5]
-22:55:30 - Sending message [4|86|7|TRANSACTION|5]
-22:55:30 - Sending message [4|37|3|TRANSACTION|5]
-22:55:30 - Sending message [4|4|6|TRANSACTION|3]
-22:55:30 - Sending message [4|92|10|TRANSACTION|5]
-22:55:30 - Sending message [4|42|4|TRANSACTION|3]
-22:55:30 - Sending message [4|70|2|TRANSACTION|3]
-22:55:30 - Sending message [4|77|3|TRANSACTION|5]
-22:55:30 - Sending message [4|47|8|TRANSACTION|3]
-22:55:30 - Sending message [4|71|10|TRANSACTION|5]
-22:55:30 - Sending message [4|24|5|TRANSACTION|3]
-22:55:30 - Sending message [4|64|7|TRANSACTION|3]
-22:55:30 - Sending message [4|57|7|TRANSACTION|5]
-22:55:30 - Sending message [4|0|7|TRANSACTION|3]
-22:55:30 - Sending message [4|98|8|TRANSACTION|5]
-22:55:30 - Sending message [4|96|6|TRANSACTION|5]
-22:55:31 - Sending message [4|52|3|TRANSACTION|5]
-22:55:31 - Sending message [4|1|7|TRANSACTION|3]
-22:55:31 - Sending message [4|12|6|TRANSACTION|5]
-22:55:31 - Sending message [4|43|3|TRANSACTION|3]
-22:55:31 - Sending message [4|87|5|TRANSACTION|3]
+22:19:17 - Starting servent [4|localhost|1500]
+22:19:17 - Pausing for 1000 ms
+22:19:18 - Start collecting bitcake_info
+22:19:18 - Pausing for 14000 ms
+22:19:19 - Got message [1|12|4|TRANSACTION|0]
+22:19:19 - Rebroadcasting... 1
+22:19:19 - Got message [1|0|2|TRANSACTION|0]
+22:19:19 - Committing [1|0|2|TRANSACTION|0]
+22:19:19 - Rebroadcasting... 2
+22:19:19 - Got message [1|15|4|TRANSACTION|3]
+22:19:19 - Rebroadcasting... 3
+22:19:19 - Got message [1|4|1|TRANSACTION|4]
+22:19:19 - Rebroadcasting... 4
+22:19:19 - Got message [1|19|3|TRANSACTION|0]
+22:19:19 - Rebroadcasting... 5
+22:19:19 - Got message [1|9|2|TRANSACTION|0]
+22:19:19 - Rebroadcasting... 6
+22:19:19 - Got message [1|10|1|TRANSACTION|2]
+22:19:19 - Rebroadcasting... 7
+22:19:19 - Got message [1|6|3|TRANSACTION|2]
+22:19:19 - Rebroadcasting... 8
+22:19:19 - Got message [1|18|4|TRANSACTION|4]
+22:19:19 - Rebroadcasting... 9
+22:19:19 - Committing [4|0||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+22:19:19 - Got message [1|21|2|TRANSACTION|4]
+22:19:19 - Rebroadcasting... 10
+22:19:19 - Got message [1|7|1|TRANSACTION|2]
+22:19:19 - Rebroadcasting... 11
+22:19:19 - Sending message [1|0|2|TRANSACTION|0]
+22:19:20 - Got message [1|11|3|TRANSACTION|4]
+22:19:20 - Rebroadcasting... 12
+22:19:20 - Got message [1|2|1|TRANSACTION|0]
+22:19:20 - Rebroadcasting... 13
+22:19:20 - Got message [1|22|1|TRANSACTION|2]
+22:19:20 - Rebroadcasting... 14
+22:19:20 - Got message [1|5|1|TRANSACTION|0]
+22:19:20 - Rebroadcasting... 15
+22:19:20 - Sending message [1|12|4|TRANSACTION|0]
+22:19:20 - Sending message [1|19|3|TRANSACTION|0]
+22:19:20 - Got message [1|13|4|TRANSACTION|4]
+22:19:20 - Rebroadcasting... 16
+22:19:20 - Got message [1|20|2|TRANSACTION|0]
+22:19:20 - Rebroadcasting... 17
+22:19:20 - Got message [1|14|2|TRANSACTION|3]
+22:19:20 - Rebroadcasting... 18
+22:19:20 - Got message [1|23|2|TRANSACTION|0]
+22:19:20 - Rebroadcasting... 19
+22:19:20 - Sending message [1|4|1|TRANSACTION|4]
+22:19:20 - Got message [1|24|3|TRANSACTION|0]
+22:19:20 - Rebroadcasting... 20
+22:19:20 - Got message [1|1|3|TRANSACTION|2]
+22:19:20 - Got message [1|17|5|TRANSACTION|3]
+22:19:20 - Committing [1|1|3|TRANSACTION|2]
+22:19:20 - Committing [1|2|1|TRANSACTION|0]
+22:19:20 - Rebroadcasting... 21
+22:19:20 - Rebroadcasting... 22
+22:19:20 - Sending message [1|6|3|TRANSACTION|2]
+22:19:20 - Got message [1|3|4|TRANSACTION|3]
+22:19:20 - Committing [1|3|4|TRANSACTION|3]
+22:19:20 - Committing [1|4|1|TRANSACTION|4]
+22:19:20 - Committing [1|5|1|TRANSACTION|0]
+22:19:20 - Committing [1|6|3|TRANSACTION|2]
+22:19:20 - Committing [1|7|1|TRANSACTION|2]
+22:19:20 - Rebroadcasting... 23
+22:19:20 - Got message [1|16|2|TRANSACTION|2]
+22:19:20 - Rebroadcasting... 24
+22:19:20 - Sending message [1|7|1|TRANSACTION|2]
+22:19:20 - Sending message [1|21|2|TRANSACTION|4]
+22:19:20 - Got message [1|8|5|TRANSACTION|0]
+22:19:20 - Committing [1|8|5|TRANSACTION|0]
+22:19:20 - Committing [1|9|2|TRANSACTION|0]
+22:19:20 - Committing [1|10|1|TRANSACTION|2]
+22:19:20 - Committing [1|11|3|TRANSACTION|4]
+22:19:20 - Committing [1|12|4|TRANSACTION|0]
+22:19:20 - Committing [1|13|4|TRANSACTION|4]
+22:19:20 - Committing [1|14|2|TRANSACTION|3]
+22:19:20 - Committing [1|15|4|TRANSACTION|3]
+22:19:20 - Committing [1|16|2|TRANSACTION|2]
+22:19:20 - Committing [1|17|5|TRANSACTION|3]
+22:19:20 - Committing [1|18|4|TRANSACTION|4]
+22:19:20 - Committing [1|19|3|TRANSACTION|0]
+22:19:20 - Committing [1|20|2|TRANSACTION|0]
+22:19:20 - Committing [1|21|2|TRANSACTION|4]
+22:19:20 - Committing [1|22|1|TRANSACTION|2]
+22:19:20 - Committing [1|23|2|TRANSACTION|0]
+22:19:20 - Committing [1|24|3|TRANSACTION|0]
+22:19:20 - Rebroadcasting... 25
+22:19:20 - Sending message [1|5|1|TRANSACTION|0]
+22:19:20 - Sending message [4|0||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+22:19:20 - Sending message [1|15|4|TRANSACTION|3]
+22:19:20 - Sending message [1|9|2|TRANSACTION|0]
+22:19:20 - Sending message [1|22|1|TRANSACTION|2]
+22:19:20 - Got message [0|13|4|TRANSACTION|1]
+22:19:20 - Rebroadcasting... 26
+22:19:20 - Got message [0|16|5|TRANSACTION|2]
+22:19:20 - Rebroadcasting... 27
+22:19:21 - Sending message [1|11|3|TRANSACTION|4]
+22:19:21 - Got message [2|2|5|TRANSACTION|0]
+22:19:21 - Sending message [1|20|2|TRANSACTION|0]
+22:19:21 - Rebroadcasting... 28
+22:19:21 - Got message [0|22|5|TRANSACTION|1]
+22:19:21 - Rebroadcasting... 29
+22:19:21 - Sending message [1|3|4|TRANSACTION|3]
+22:19:21 - Sending message [1|16|2|TRANSACTION|2]
+22:19:21 - Sending message [1|10|1|TRANSACTION|2]
+22:19:21 - Got message [0|3|1|TRANSACTION|2]
+22:19:21 - Got message [0|7|2|TRANSACTION|4]
+22:19:21 - Rebroadcasting... 30
+22:19:21 - Rebroadcasting... 31
+22:19:21 - Sending message [1|14|2|TRANSACTION|3]
+22:19:21 - Sending message [1|18|4|TRANSACTION|4]
+22:19:21 - Got message [0|15|1|TRANSACTION|1]
+22:19:21 - Rebroadcasting... 32
+22:19:21 - Got message [0|18|1|TRANSACTION|1]
+22:19:21 - Rebroadcasting... 33
+22:19:21 - Got message [2|19|1|TRANSACTION|3]
+22:19:21 - Rebroadcasting... 34
+22:19:21 - Got message [0|9|2|TRANSACTION|2]
+22:19:21 - Rebroadcasting... 35
+22:19:21 - Sending message [1|24|3|TRANSACTION|0]
+22:19:21 - Sending message [1|17|5|TRANSACTION|3]
+22:19:21 - Got message [2|7|3|TRANSACTION|1]
+22:19:21 - Rebroadcasting... 36
+22:19:21 - Got message [0|6|4|TRANSACTION|1]
+22:19:21 - Rebroadcasting... 37
+22:19:21 - Sending message [1|1|3|TRANSACTION|2]
+22:19:21 - Got message [2|14|4|TRANSACTION|4]
+22:19:21 - Rebroadcasting... 38
+22:19:21 - Got message [0|14|1|TRANSACTION|3]
+22:19:21 - Rebroadcasting... 39
+22:19:21 - Sending message [1|23|2|TRANSACTION|0]
+22:19:21 - Got message [2|5|3|TRANSACTION|3]
+22:19:21 - Rebroadcasting... 40
+22:19:21 - Got message [0|10|1|TRANSACTION|2]
+22:19:21 - Rebroadcasting... 41
+22:19:21 - Sending message [1|2|1|TRANSACTION|0]
+22:19:21 - Got message [0|23|5|TRANSACTION|2]
+22:19:21 - Rebroadcasting... 42
+22:19:21 - Got message [2|13|4|TRANSACTION|1]
+22:19:21 - Got message [2|16|4|TRANSACTION|0]
+22:19:21 - Rebroadcasting... 43
+22:19:21 - Rebroadcasting... 44
+22:19:21 - Got message [0|12|4|TRANSACTION|4]
+22:19:21 - Got message [0|24|5|TRANSACTION|3]
+22:19:21 - Rebroadcasting... 45
+22:19:21 - Rebroadcasting... 46
+22:19:21 - Got message [2|21|4|TRANSACTION|0]
+22:19:21 - Rebroadcasting... 47
+22:19:21 - Got message [0|2|3|TRANSACTION|4]
+22:19:21 - Rebroadcasting... 48
+22:19:21 - Sending message [1|13|4|TRANSACTION|4]
+22:19:21 - Sending message [2|2|5|TRANSACTION|0]
+22:19:21 - Got message [2|24|3|TRANSACTION|0]
+22:19:21 - Rebroadcasting... 49
+22:19:21 - Got message [0|8|3|TRANSACTION|4]
+22:19:21 - Rebroadcasting... 50
+22:19:21 - Got message [2|11|1|TRANSACTION|3]
+22:19:21 - Rebroadcasting... 51
+22:19:21 - Got message [2|1|2|TRANSACTION|1]
+22:19:21 - Rebroadcasting... 52
+22:19:21 - Got message [2|20|4|TRANSACTION|3]
+22:19:21 - Rebroadcasting... 53
+22:19:21 - Got message [3|0|1015|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:21 - Got message [0|21|5|TRANSACTION|3]
+22:19:21 - Rebroadcasting... 54
+22:19:21 - Rebroadcasting... 55
+22:19:21 - Got message [2|6|2|TRANSACTION|4]
+22:19:21 - Rebroadcasting... 56
+22:19:21 - Got message [4|0||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+22:19:21 - Got own message back. No rebroadcast.
+22:19:21 - Sending message [0|6|4|TRANSACTION|1]
+22:19:21 - Sending message [0|9|2|TRANSACTION|2]
+22:19:21 - Got message [2|4|1|TRANSACTION|3]
+22:19:21 - Rebroadcasting... 57
+22:19:21 - Sending message [0|22|5|TRANSACTION|1]
+22:19:21 - Got message [0|20|5|TRANSACTION|2]
+22:19:21 - Rebroadcasting... 58
+22:19:21 - Got message [2|3|4|TRANSACTION|1]
+22:19:21 - Rebroadcasting... 59
+22:19:21 - Got message [2|9|1|TRANSACTION|4]
+22:19:21 - Rebroadcasting... 60
+22:19:21 - Got message [0|4|3|TRANSACTION|2]
+22:19:21 - Rebroadcasting... 61
+22:19:21 - Sending message [0|13|4|TRANSACTION|1]
+22:19:22 - Got message [0|0|1|TRANSACTION|4]
+22:19:22 - Got message [0|1|3|TRANSACTION|1]
+22:19:22 - Committing [0|0|1|TRANSACTION|4]
+22:19:22 - Committing [3|0|1015|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:22 - Rebroadcasting... 62
+22:19:22 - Committing [0|1|3|TRANSACTION|1]
+22:19:22 - Committing [0|2|3|TRANSACTION|4]
+22:19:22 - Committing [0|3|1|TRANSACTION|2]
+22:19:22 - Committing [0|4|3|TRANSACTION|2]
+22:19:22 - Rebroadcasting... 63
+22:19:22 - Got message [0|11|3|TRANSACTION|4]
+22:19:22 - Rebroadcasting... 64
+22:19:22 - Got message [0|5|5|TRANSACTION|3]
+22:19:22 - Committing [0|5|5|TRANSACTION|3]
+22:19:22 - Committing [0|6|4|TRANSACTION|1]
+22:19:22 - Committing [0|7|2|TRANSACTION|4]
+22:19:22 - Committing [0|8|3|TRANSACTION|4]
+22:19:22 - Committing [0|9|2|TRANSACTION|2]
+22:19:22 - Committing [0|10|1|TRANSACTION|2]
+22:19:22 - Committing [0|11|3|TRANSACTION|4]
+22:19:22 - Committing [0|12|4|TRANSACTION|4]
+22:19:22 - Committing [0|13|4|TRANSACTION|1]
+22:19:22 - Committing [0|14|1|TRANSACTION|3]
+22:19:22 - Committing [0|15|1|TRANSACTION|1]
+22:19:22 - Committing [0|16|5|TRANSACTION|2]
+22:19:22 - Rebroadcasting... 65
+22:19:22 - Sending message [0|16|5|TRANSACTION|2]
+22:19:22 - Sending message [1|8|5|TRANSACTION|0]
+22:19:22 - Sending message [0|7|2|TRANSACTION|4]
+22:19:22 - Sending message [2|7|3|TRANSACTION|1]
+22:19:22 - Sending message [0|23|5|TRANSACTION|2]
+22:19:22 - Got message [2|17|2|TRANSACTION|3]
+22:19:22 - Rebroadcasting... 66
+22:19:22 - Got message [2|10|2|TRANSACTION|1]
+22:19:22 - Rebroadcasting... 67
+22:19:22 - Sending message [0|15|1|TRANSACTION|1]
+22:19:22 - Got message [2|15|1|TRANSACTION|1]
+22:19:22 - Rebroadcasting... 68
+22:19:22 - Got message [2|22|3|TRANSACTION|3]
+22:19:22 - Rebroadcasting... 69
+22:19:22 - Sending message [0|12|4|TRANSACTION|4]
+22:19:22 - Sending message [2|6|2|TRANSACTION|4]
+22:19:22 - Sending message [2|16|4|TRANSACTION|0]
+22:19:22 - Got message [0|17|5|TRANSACTION|2]
+22:19:22 - Got message [2|8|3|TRANSACTION|0]
+22:19:22 - Committing [0|17|5|TRANSACTION|2]
+22:19:22 - Committing [0|18|1|TRANSACTION|1]
+22:19:22 - Got message [2|12|2|TRANSACTION|0]
+22:19:22 - Rebroadcasting... 70
+22:19:22 - Rebroadcasting... 71
+22:19:22 - Rebroadcasting... 72
+22:19:22 - Sending message [2|21|4|TRANSACTION|0]
+22:19:22 - Got message [0|19|4|TRANSACTION|2]
+22:19:22 - Committing [0|19|4|TRANSACTION|2]
+22:19:22 - Committing [0|20|5|TRANSACTION|2]
+22:19:22 - Committing [0|21|5|TRANSACTION|3]
+22:19:22 - Committing [0|22|5|TRANSACTION|1]
+22:19:22 - Committing [0|23|5|TRANSACTION|2]
+22:19:22 - Committing [0|24|5|TRANSACTION|3]
+22:19:22 - Rebroadcasting... 73
+22:19:22 - Sending message [2|5|3|TRANSACTION|3]
+22:19:22 - Sending message [0|10|1|TRANSACTION|2]
+22:19:22 - Got message [2|18|4|TRANSACTION|3]
+22:19:22 - Rebroadcasting... 74
+22:19:22 - Got message [2|0|5|TRANSACTION|4]
+22:19:22 - Committing [2|0|5|TRANSACTION|4]
+22:19:22 - Committing [2|1|2|TRANSACTION|1]
+22:19:22 - Committing [2|2|5|TRANSACTION|0]
+22:19:22 - Committing [2|3|4|TRANSACTION|1]
+22:19:22 - Committing [2|4|1|TRANSACTION|3]
+22:19:22 - Committing [2|5|3|TRANSACTION|3]
+22:19:22 - Committing [2|6|2|TRANSACTION|4]
+22:19:22 - Committing [2|7|3|TRANSACTION|1]
+22:19:22 - Committing [2|8|3|TRANSACTION|0]
+22:19:22 - Committing [2|9|1|TRANSACTION|4]
+22:19:22 - Committing [2|10|2|TRANSACTION|1]
+22:19:22 - Committing [2|11|1|TRANSACTION|3]
+22:19:22 - Committing [2|12|2|TRANSACTION|0]
+22:19:22 - Committing [2|13|4|TRANSACTION|1]
+22:19:22 - Committing [2|14|4|TRANSACTION|4]
+22:19:22 - Committing [2|15|1|TRANSACTION|1]
+22:19:22 - Committing [2|16|4|TRANSACTION|0]
+22:19:22 - Committing [2|17|2|TRANSACTION|3]
+22:19:22 - Committing [2|18|4|TRANSACTION|3]
+22:19:22 - Committing [2|19|1|TRANSACTION|3]
+22:19:22 - Committing [2|20|4|TRANSACTION|3]
+22:19:22 - Committing [2|21|4|TRANSACTION|0]
+22:19:22 - Sending message [2|20|4|TRANSACTION|3]
+22:19:22 - Committing [2|22|3|TRANSACTION|3]
+22:19:22 - Rebroadcasting... 75
+22:19:22 - Sending message [0|24|5|TRANSACTION|3]
+22:19:22 - Sending message [0|18|1|TRANSACTION|1]
+22:19:22 - Got message [2|23|3|TRANSACTION|1]
+22:19:22 - Committing [2|23|3|TRANSACTION|1]
+22:19:22 - Committing [2|24|3|TRANSACTION|0]
+22:19:22 - Rebroadcasting... 76
+22:19:22 - Sending message [0|3|1|TRANSACTION|2]
+22:19:22 - Sending message [2|19|1|TRANSACTION|3]
+22:19:22 - Sending message [2|14|4|TRANSACTION|4]
+22:19:22 - Sending message [0|0|1|TRANSACTION|4]
+22:19:22 - Sending message [3|0|1015|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:22 - Sending message [0|21|5|TRANSACTION|3]
+22:19:22 - Sending message [0|14|1|TRANSACTION|3]
+22:19:22 - Sending message [0|20|5|TRANSACTION|2]
+22:19:22 - Sending message [2|11|1|TRANSACTION|3]
+22:19:22 - Sending message [0|5|5|TRANSACTION|3]
+22:19:22 - Sending message [2|24|3|TRANSACTION|0]
+22:19:22 - Sending message [0|8|3|TRANSACTION|4]
+22:19:22 - Sending message [2|13|4|TRANSACTION|1]
+22:19:22 - Sending message [2|4|1|TRANSACTION|3]
+22:19:22 - Sending message [0|2|3|TRANSACTION|4]
+22:19:22 - Sending message [0|1|3|TRANSACTION|1]
+22:19:22 - Sending message [0|19|4|TRANSACTION|2]
+22:19:23 - Sending message [2|17|2|TRANSACTION|3]
+22:19:23 - Sending message [2|23|3|TRANSACTION|1]
+22:19:23 - Sending message [0|4|3|TRANSACTION|2]
+22:19:23 - Sending message [2|22|3|TRANSACTION|3]
+22:19:23 - Sending message [2|8|3|TRANSACTION|0]
+22:19:23 - Sending message [2|1|2|TRANSACTION|1]
+22:19:23 - Got message [2|25|971|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:23 - Committing [2|25|971|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:23 - Rebroadcasting... 77
+22:19:23 - Sending message [2|10|2|TRANSACTION|1]
+22:19:23 - Sending message [2|15|1|TRANSACTION|1]
+22:19:23 - Sending message [2|3|4|TRANSACTION|1]
+22:19:23 - Sending message [2|9|1|TRANSACTION|4]
+22:19:23 - Sending message [2|18|4|TRANSACTION|3]
+22:19:23 - Sending message [0|11|3|TRANSACTION|4]
+22:19:23 - Sending message [2|0|5|TRANSACTION|4]
+22:19:23 - Sending message [2|12|2|TRANSACTION|0]
+22:19:23 - Sending message [0|17|5|TRANSACTION|2]
+22:19:24 - Sending message [2|25|971|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:24 - Got message [1|25|953|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:24 - Committing [1|25|953|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:24 - Rebroadcasting... 78
+22:19:25 - Sending message [1|25|953|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:25 - Got message [0|25|965|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:25 - Committing [0|25|965|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:25 - Rebroadcasting... 79
+22:19:26 - Sending message [0|25|965|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:26 - Info for node4 = 1000 bitcake
+22:19:26 - Info for node2 = 971 bitcake
+22:19:26 - Info for unprocessed transaction: 5 bitcake
+22:19:26 - Info for unprocessed transaction: 2 bitcake
+22:19:26 - Info for unprocessed transaction: 4 bitcake
+22:19:26 - Info for unprocessed transaction: 1 bitcake
+22:19:26 - Info for unprocessed transaction: 3 bitcake
+22:19:26 - Info for unprocessed transaction: 2 bitcake
+22:19:26 - Info for unprocessed transaction: 3 bitcake
+22:19:26 - Info for unprocessed transaction: 1 bitcake
+22:19:26 - Info for unprocessed transaction: 2 bitcake
+22:19:26 - Info for unprocessed transaction: 1 bitcake
+22:19:26 - Info for unprocessed transaction: 4 bitcake
+22:19:26 - Info for unprocessed transaction: 4 bitcake
+22:19:26 - Info for unprocessed transaction: 1 bitcake
+22:19:26 - Info for unprocessed transaction: 2 bitcake
+22:19:26 - Info for unprocessed transaction: 4 bitcake
+22:19:26 - Info for unprocessed transaction: 1 bitcake
+22:19:26 - Info for unprocessed transaction: 4 bitcake
+22:19:26 - Info for unprocessed transaction: 3 bitcake
+22:19:26 - Info for unprocessed transaction: 3 bitcake
+22:19:26 - Info for node3 = 1015 bitcake
+22:19:26 - Info for node0 = 965 bitcake
+22:19:26 - Info for unprocessed transaction: 1 bitcake
+22:19:26 - Info for unprocessed transaction: 3 bitcake
+22:19:26 - Info for unprocessed transaction: 5 bitcake
+22:19:26 - Info for unprocessed transaction: 2 bitcake
+22:19:26 - Info for unprocessed transaction: 3 bitcake
+22:19:26 - Info for unprocessed transaction: 3 bitcake
+22:19:26 - Info for unprocessed transaction: 4 bitcake
+22:19:26 - Info for unprocessed transaction: 1 bitcake
+22:19:26 - Info for unprocessed transaction: 5 bitcake
+22:19:26 - Info for unprocessed transaction: 5 bitcake
+22:19:26 - Info for node1 = 953 bitcake
+22:19:26 - Info for unprocessed transaction: 1 bitcake
+22:19:26 - Info for unprocessed transaction: 3 bitcake
+22:19:26 - Info for unprocessed transaction: 4 bitcake
+22:19:26 - Info for unprocessed transaction: 4 bitcake
+22:19:26 - Info for unprocessed transaction: 2 bitcake
+22:19:26 - System bitcake count: 5000
+22:19:32 - Start collecting bitcake_info
+22:19:32 - Pausing for 15000 ms
+22:19:32 - Committing [4|1||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+22:19:34 - Sending message [4|1||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+22:19:35 - Got message [3|1|1050|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:35 - Committing [3|1|1050|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:35 - Rebroadcasting... 80
+22:19:35 - Got message [4|1||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+22:19:35 - Got own message back. No rebroadcast.
+22:19:35 - Sending message [3|1|1050|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:37 - Got message [1|26|972|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:37 - Committing [1|26|972|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:37 - Rebroadcasting... 81
+22:19:38 - Got message [2|26|971|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:38 - Committing [2|26|971|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:38 - Rebroadcasting... 82
+22:19:38 - Sending message [1|26|972|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:39 - Sending message [2|26|971|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:39 - Got message [0|26|965|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:39 - Committing [0|26|965|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:39 - Rebroadcasting... 83
+22:19:40 - Sending message [0|26|965|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+22:19:40 - Info for node4 = 1042 bitcake
+22:19:40 - Info for node2 = 971 bitcake
+22:19:40 - Info for node3 = 1050 bitcake
+22:19:40 - Info for node0 = 965 bitcake
+22:19:40 - Info for node1 = 972 bitcake
+22:19:40 - System bitcake count: 5000
+22:19:47 - {0=27, 1=27, 2=27, 3=2, 4=2}
+22:19:47 - 1042
+22:19:47 - Stopping...

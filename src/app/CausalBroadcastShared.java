@@ -2,12 +2,11 @@ package app;
 
 import app.snapshot_bitcake.SnapshotCollector;
 import servent.handler.TransactionHandler;
+import servent.message.BasicMessage;
 import servent.message.Message;
-import servent.message.TransactionMessage;
+import servent.message.MessageType;
 
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 import java.util.concurrent.*;
 import java.util.function.BiFunction;
 
@@ -24,9 +23,11 @@ import java.util.function.BiFunction;
  */
 public class CausalBroadcastShared {
     private static final Map<Integer, Integer> vectorClock = new ConcurrentHashMap<>();
+    private static final List<Message> commitedCausalMessageList = new CopyOnWriteArrayList<>();
     private static final Queue<Message> pendingMessages = new ConcurrentLinkedQueue<>();
     private static final Object pendingMessagesLock = new Object();
-    private static final ExecutorService committedMessagesPoll = Executors.newCachedThreadPool();
+    private static final ExecutorService committedMessagesThreadPool = Executors.newWorkStealingPool();
+    private static SnapshotCollector snapshotCollector;
 
 
     public static void initializeVectorClock(int serventCount) {
@@ -49,6 +50,14 @@ public class CausalBroadcastShared {
         return vectorClock;
     }
 
+    public static SnapshotCollector getSnapshotCollector() {
+        return snapshotCollector;
+    }
+
+    public static void setSnapshotCollector(SnapshotCollector snapshotCollector) {
+        CausalBroadcastShared.snapshotCollector = snapshotCollector;
+    }
+
     public static void addPendingMessage(Message msg) {
         pendingMessages.add(msg);
     }
@@ -67,7 +76,22 @@ public class CausalBroadcastShared {
         return false;
     }
 
-    public static void checkPendingMessages(SnapshotCollector snapshotCollector) {
+    public static List<Message> getCommitedCausalMessages() {
+        List<Message> toReturn = new CopyOnWriteArrayList<>(commitedCausalMessageList);
+
+        return toReturn;
+    }
+
+    public static void commitCausalMessage(Message newMessage) {
+        AppConfig.timestampedStandardPrint("Committing " + newMessage);
+        commitedCausalMessageList.add(newMessage);
+        incrementClock(newMessage.getOriginalSenderInfo().getId());
+
+        checkPendingMessages();
+    }
+
+
+    public static void checkPendingMessages() {
         boolean gotWork = true;
 
         while (gotWork) {
@@ -79,22 +103,22 @@ public class CausalBroadcastShared {
 
                 while (iterator.hasNext()) {
                     Message pendingMessage = iterator.next();
+                    BasicMessage basicMessage = (BasicMessage) pendingMessage;
 
-                    if (!otherClockGreater(myVectorClock, pendingMessage.getSenderVectorClock())) {//ako je desni (sender) veci od mene (levi) imamo message
+                    if (!otherClockGreater(myVectorClock, basicMessage.getSenderVectorClock())) {//ako je desni (sender) veci od mene (levi) imamo message
                         gotWork = true;
 
+                        AppConfig.timestampedStandardPrint("Committing " + pendingMessage);
+                        commitedCausalMessageList.add(pendingMessage);
+                        incrementClock(pendingMessage.getOriginalSenderInfo().getId());
+
+                        boolean didPut;//todo stavi za ostale
 
                         //todo dodaj primanje osalih vrsta poruka
-                        switch (pendingMessage.getMessageType()) {
-                            case TRANSACTION -> {
-                                incrementClock(pendingMessage.getOriginalSenderInfo().getId());
-//                                if (((TransactionMessage) pendingMessage).getOriginallyIntendedReceiver() == AppConfig.myServentInfo.getId())
-                                if (pendingMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
-                                    committedMessagesPoll.submit(new TransactionHandler(pendingMessage, snapshotCollector.getBitcakeManager()));
-                            }
-
+                        if (Objects.requireNonNull(pendingMessage.getMessageType()) == MessageType.TRANSACTION) {
+                            if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
+                                committedMessagesThreadPool.submit(new TransactionHandler(basicMessage, snapshotCollector.getBitcakeManager()));
                         }
-
                         iterator.remove();
                         break;
                     }

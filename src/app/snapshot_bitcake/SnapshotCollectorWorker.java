@@ -1,18 +1,17 @@
 package app.snapshot_bitcake;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.atomic.AtomicBoolean;
-
 import app.AppConfig;
 import app.snapshot_bitcake.ab.AbBitCakeManager;
 import app.snapshot_bitcake.ab.AbSnapshotResult;
 import app.snapshot_bitcake.av.AvBitCakeManager;
-import servent.message.Message;
-import servent.message.util.MessageUtil;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Objects;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Main snapshot collector class. Has support for Naive, Chandy-Lamport
@@ -24,13 +23,13 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
     private volatile boolean working = true;
 
-    private AtomicBoolean collecting = new AtomicBoolean(false);
+    private final AtomicBoolean collecting = new AtomicBoolean(false);
 
-    private Map<String, Integer> collectedNaiveValues = new ConcurrentHashMap<>();
-    private Map<Integer, AbSnapshotResult> collectedABValues = new ConcurrentHashMap<>();
-    private List<Integer> collectedDoneMessages = new CopyOnWriteArrayList<>();
+    private final Map<String, Integer> collectedNaiveValues = new ConcurrentHashMap<>();
+    private final Map<Integer, AbSnapshotResult> collectedABValues = new ConcurrentHashMap<>();
+    private final List<Integer> collectedDoneMessages = new CopyOnWriteArrayList<>();
 
-    private SnapshotType snapshotType;
+    private final SnapshotType snapshotType;
 
     private BitcakeManager bitcakeManager;
 
@@ -85,11 +84,8 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
              */
 
             //1 send asks
-            switch (snapshotType) {//todo dodaj casove za AB i AV snapshotove
-
-                case NONE:
-                    //Shouldn't be able to come here. See constructor.
-                    break;
+            //todo dodaj casove za AB i AV snapshotove
+            if (Objects.requireNonNull(snapshotType) == SnapshotType.NONE) {//Shouldn't be able to come here. See constructor.
             }
 
             //2 wait for responses or finish
@@ -97,11 +93,13 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
             while (waiting) {
                 switch (snapshotType) {
 
-                    case AB ->{} //todo AB snapshot collector
-                    case AV ->{} //todo AV snapshot collector
+                    case AB -> {
+                    } //todo AB snapshot collector
+                    case AV -> {
+                    } //todo AV snapshot collector
                     case NONE -> System.out.println("CRITICAL ERROR");
 
-                        //Shouldn't be able to come here. See constructor.
+                    //Shouldn't be able to come here. See constructor.
                 }
 
                 try {

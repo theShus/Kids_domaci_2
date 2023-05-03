@@ -10,37 +10,37 @@ import java.util.List;
  */
 public class ServentInfo implements Serializable {
 
-	private static final long serialVersionUID = 5304170042791281555L;
-	private final int id;
-	private final String ipAddress;
-	private final int listenerPort;
-	private final List<Integer> neighbors;
-	
-	public ServentInfo(String ipAddress, int id, int listenerPort, List<Integer> neighbors) {
-		this.ipAddress = ipAddress;
-		this.listenerPort = listenerPort;
-		this.id = id;
-		this.neighbors = neighbors;
-	}
+    private static final long serialVersionUID = 5304170042791281555L;
+    private final int id;
+    private final String ipAddress;
+    private final int listenerPort;
+    private final List<Integer> neighbors;
 
-	public String getIpAddress() {
-		return ipAddress;
-	}
+    public ServentInfo(String ipAddress, int id, int listenerPort, List<Integer> neighbors) {
+        this.ipAddress = ipAddress;
+        this.listenerPort = listenerPort;
+        this.id = id;
+        this.neighbors = neighbors;
+    }
 
-	public int getListenerPort() {
-		return listenerPort;
-	}
+    public String getIpAddress() {
+        return ipAddress;
+    }
 
-	public int getId() {
-		return id;
-	}
-	
-	public List<Integer> getNeighbors() {
-		return neighbors;
-	}
-	
-	@Override
-	public String toString() {
-		return "[" + id + "|" + ipAddress + "|" + listenerPort + "]";
-	}
+    public int getListenerPort() {
+        return listenerPort;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public List<Integer> getNeighbors() {
+        return neighbors;
+    }
+
+    @Override
+    public String toString() {
+        return "[" + id + "|" + ipAddress + "|" + listenerPort + "]";
+    }
 }

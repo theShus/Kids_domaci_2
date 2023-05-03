@@ -1,5 +1,7 @@
 package app;
 
+import app.snapshot_bitcake.SnapshotType;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,8 +12,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicBoolean;
-
-import app.snapshot_bitcake.SnapshotType;
 
 /**
  * This class contains all the global application configuration stuff.
@@ -25,7 +25,7 @@ public class AppConfig {
      */
     public static ServentInfo myServentInfo;
 
-    private static List<ServentInfo> serventInfoList = new ArrayList<>();
+    private static final List<ServentInfo> serventInfoList = new ArrayList<>();
     // If this is true, the system is a clique - all nodes are each other's neighbors.
     public static boolean IS_CLIQUE;
 
@@ -165,22 +165,19 @@ public class AppConfig {
 
                     neighborList.add(j);
                 }
-            }
-            else {
+            } else {
                 String neighborListProp = properties.getProperty("servent" + i + ".neighbors");
 
                 if (neighborListProp == null) {
                     timestampedErrorPrint("Warning: graph is not clique, and node " + i + " doesnt have neighbors");
-                }
-                else {
+                } else {
                     String[] neighborListArr = neighborListProp.split(",");
 
                     try {
                         for (String neighbor : neighborListArr) {
                             neighborList.add(Integer.parseInt(neighbor));
                         }
-                    }
-                    catch (NumberFormatException e) {
+                    } catch (NumberFormatException e) {
                         timestampedErrorPrint("Bad neighbor list for node " + i + ": " + neighborListProp);
                     }
                 }
