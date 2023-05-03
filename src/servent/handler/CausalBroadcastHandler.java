@@ -60,7 +60,8 @@ public class CausalBroadcastHandler implements MessageHandler {
                             MessageUtil.sendMessage(clientMessage.changeReceiver(neighbor).makeMeASender());
                         }
                     }
-                } else {
+                }
+                else {
                     //We already got this from somewhere else. /ignore
                     AppConfig.timestampedStandardPrint("Already had this. No rebroadcast.");
                 }

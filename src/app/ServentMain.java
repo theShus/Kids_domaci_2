@@ -68,6 +68,9 @@ public class ServentMain {
         } else {
             snapshotCollector = new SnapshotCollectorWorker(AppConfig.SNAPSHOT_TYPE);
         }
+
+        CausalBroadcastShared.setSnapshotCollector(snapshotCollector);
+
         Thread snapshotCollectorThread = new Thread(snapshotCollector);
         snapshotCollectorThread.start();
 

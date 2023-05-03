@@ -32,21 +32,20 @@ public class TransactionHandler implements MessageHandler {
 
             bitcakeManager.addSomeBitcakes(amountNumber);
 
-            synchronized (AppConfig.syncHole) {
-                if (bitcakeManager instanceof AbBitCakeManager abBitcakeManager) {
-                    //todo proveri
-                    abBitcakeManager.recordGetTransaction(clientMessage.getOriginalSenderInfo().getId(), amountNumber);
-                } else if (bitcakeManager instanceof AvBitCakeManager avBitcakeManager) {
-                    //todo proveri
-                    avBitcakeManager.recordGetTransaction(clientMessage.getSenderVectorClock(), clientMessage.getOriginalSenderInfo().getId(), amountNumber);
+//            synchronized (AppConfig.syncHole) {
+                if (bitcakeManager instanceof AbBitCakeManager) {
+                    //todo uradi snimanje
+//                    abBitcakeManager.recordGetTransaction(clientMessage.getOriginalSenderInfo().getId(), amountNumber);
                 }
-            }
-        } else {
+                else if (bitcakeManager instanceof AvBitCakeManager) {
+                    //todo uradi snimanje
+//                    avBitcakeManager.recordGetTransaction(clientMessage.getSenderVectorClock(), clientMessage.getOriginalSenderInfo().getId(), amountNumber);
+                }
+//            }
+        }
+        else {
             AppConfig.timestampedErrorPrint("Transaction handler got: " + clientMessage);
         }
-
-        AppConfig.timestampedErrorPrint("Transaction handler got: " + clientMessage);
     }
-
 
 }

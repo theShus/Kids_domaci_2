@@ -54,7 +54,7 @@ public class TransactionBurstCommand implements CLICommand {
 
                     // reduce our bitcake count then send the message
                     transactionMessage.sendEffect();
-                    CausalBroadcastShared.commitCausalMessage(transactionMessage);
+                    CausalBroadcastShared.commitCausalMessage(transactionMessage);//todo promeni ime ovoga kad saznas sta radi
                 }
 
                 for (int neighbor : AppConfig.myServentInfo.getNeighbors()) {
