@@ -1,1 +1,0 @@
-14:17:55 - Tried to start collecting before finished with previous.

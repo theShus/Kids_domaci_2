@@ -32,13 +32,15 @@ public class CausalBroadcastShared {
     }
 
     public static void incrementClock(int serventId) {
-        vectorClock.computeIfPresent(serventId, new BiFunction<Integer, Integer, Integer>() {
+        vectorClock.computeIfPresent(serventId, (key, oldValue) -> oldValue+1);
 
-            @Override
-            public Integer apply(Integer key, Integer oldValue) {
-                return oldValue + 1;
-            }
-        });
+//        vectorClock.computeIfPresent(serventId, new BiFunction<Integer, Integer, Integer>() {
+//
+//            @Override
+//            public Integer apply(Integer key, Integer oldValue) {
+//                return oldValue + 1;
+//            }
+//        });
     }
 
     public static Map<Integer, Integer> getVectorClock() {

@@ -21,8 +21,8 @@ public class InfoCommand implements CLICommand {
 //
 //        AppConfig.timestampedStandardPrint(neighbors);
 //
-        AppConfig.timestampedStandardPrint("CLOCK - " + CausalBroadcastShared.getVectorClock().toString());
-        AppConfig.timestampedStandardPrint("BITCAKES -" + CausalBroadcastShared.getSnapshotCollector().getBitcakeManager().getCurrentBitcakeAmount());
+        AppConfig.timestampedStandardPrint("CLOCK: " + CausalBroadcastShared.getVectorClock());
+        AppConfig.timestampedStandardPrint("BITCAKES: " + CausalBroadcastShared.getSnapshotCollector().getBitcakeManager().getCurrentBitcakeAmount());
 
     }
 

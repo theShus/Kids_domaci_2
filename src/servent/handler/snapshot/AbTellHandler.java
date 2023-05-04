@@ -28,12 +28,13 @@ public class AbTellHandler implements MessageHandler {
                 AbTellMessage tellAmountMessage = (AbTellMessage) clientMessage;
 
                 AbSnapshotResult abSnapshotResult = new AbSnapshotResult(
-                        AppConfig.myServentInfo.getId(),
+                        clientMessage.getOriginalSenderInfo().getId(),
                         neighborAmount,
                         tellAmountMessage.getSentTransactions(),
                         tellAmountMessage.getReceivedTransactions());
 
-                snapshotCollector.getCollectedAbValues().put("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);
+//                snapshotCollector.getCollectedAbValues().put("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);
+                snapshotCollector.test("node " + clientMessage.getOriginalSenderInfo().getId(), abSnapshotResult);
             } else {
                 AppConfig.timestampedErrorPrint("Tell amount handler got: " + clientMessage);
             }

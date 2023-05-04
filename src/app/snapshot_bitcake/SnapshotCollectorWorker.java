@@ -98,7 +98,8 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                             bitcakeManager.getCurrentBitcakeAmount(),
                             CausalBroadcastShared.getSendTransactions(),
                             CausalBroadcastShared.getReceivedTransactions());
-                    collectedAbValues.put("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);
+//                    collectedAbValues.put("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);//todo vrati ovo
+                    test("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);
 
                     CausalBroadcastShared.commitCausalMessage(askMessage);//TODO promeni ovo govno
                 }
@@ -195,6 +196,12 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
     @Override
     public boolean isCollecting() {
         return collecting.get();
+    }
+
+    @Override
+    public void test(String key, AbSnapshotResult abSnapshotResult) {
+        System.out.println("COLL STAVILI SMO " + key);
+        collectedAbValues.put(key, abSnapshotResult);
     }
 
     @Override

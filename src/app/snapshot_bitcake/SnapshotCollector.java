@@ -22,5 +22,7 @@ public interface SnapshotCollector extends Runnable, Cancellable {
 
     boolean isCollecting();
 
+    public void test(String key, AbSnapshotResult abSnapshotResult);
+
     public Map<String, AbSnapshotResult> getCollectedAbValues();
 }

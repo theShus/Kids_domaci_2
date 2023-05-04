@@ -35,6 +35,11 @@ public class NullSnapshotCollector implements SnapshotCollector {
     }
 
     @Override
+    public void test(String key, AbSnapshotResult abSnapshotResult) {
+
+    }
+
+    @Override
     public Map<String, AbSnapshotResult> getCollectedAbValues() {
         return null;
     }
