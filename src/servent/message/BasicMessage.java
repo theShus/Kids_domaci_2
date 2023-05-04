@@ -194,9 +194,8 @@ public class BasicMessage implements Message {
      */
     @Override
     public String toString() {
-        return "[" + getOriginalSenderInfo().getId() + "|" + getMessageId() + "|" +
-                getMessageText() + "|" + getMessageType() + "|" +
-                (getOriginalReceiverInfo() != null ? getOriginalReceiverInfo().getId() : null) + "]";
+        return "[ogS:" + getOriginalSenderInfo().getId() + "|mId:" + getMessageId() + "|mt:" + getMessageText() +
+                "|mt:" + getMessageType() + "|mr:" /*+ getReceiverInfo().getId() */+ "|ogR:" + (getOriginalReceiverInfo() != null ? getOriginalReceiverInfo().getId() : null) + "]";
     }
 
 

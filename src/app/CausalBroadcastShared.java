@@ -2,25 +2,16 @@ package app;
 
 import app.snapshot_bitcake.SnapshotCollector;
 import servent.handler.TransactionHandler;
+import servent.handler.snapshot.AbAskHandler;
+import servent.handler.snapshot.AbTellHandler;
 import servent.message.BasicMessage;
 import servent.message.Message;
 import servent.message.MessageType;
-
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.function.BiFunction;
 
-/**
- * This class contains shared data for the Causal Broadcast implementation:
- * <ul>
- * <li> Vector clock for current instance
- * <li> Commited message list
- * <li> Pending queue
- * </ul>
- * As well as operations for working with all of the above.
- *
- * @author bmilojkovic
- */
+
 public class CausalBroadcastShared {
     private static final Map<Integer, Integer> vectorClock = new ConcurrentHashMap<>();
     private static final List<Message> commitedCausalMessageList = new CopyOnWriteArrayList<>();
@@ -28,6 +19,10 @@ public class CausalBroadcastShared {
     private static final Object pendingMessagesLock = new Object();
     private static final ExecutorService committedMessagesThreadPool = Executors.newWorkStealingPool();
     private static SnapshotCollector snapshotCollector;
+
+    private static final List<Message> sendTransactions = new CopyOnWriteArrayList<>();
+    private static final List<Message> receivedTransactions = new CopyOnWriteArrayList<>();
+    private static final Set<Message> receivedAbAsk = Collections.newSetFromMap(new ConcurrentHashMap<>());
 
 
     public static void initializeVectorClock(int serventCount) {
@@ -76,6 +71,23 @@ public class CausalBroadcastShared {
         return false;
     }
 
+
+    public static void addReceivedTransaction(Message receivedTransaction) {
+        receivedTransactions.add(receivedTransaction);
+    }
+
+    public static List<Message> getReceivedTransactions() {
+        return receivedTransactions;
+    }
+
+    public static void addSendTransaction(Message sendTransaction) {
+        sendTransactions.add(sendTransaction);
+    }
+
+    public static List<Message> getSendTransactions() {
+        return sendTransactions;
+    }
+
     public static List<Message> getCommitedCausalMessages() {
         List<Message> toReturn = new CopyOnWriteArrayList<>(commitedCausalMessageList);
 
@@ -83,8 +95,8 @@ public class CausalBroadcastShared {
     }
 
     public static void commitCausalMessage(Message newMessage) {
-        AppConfig.timestampedStandardPrint("Committing " + newMessage);
-        commitedCausalMessageList.add(newMessage);
+        AppConfig.timestampedStandardPrint("-Committing- " + newMessage);
+//        commitedCausalMessageList.add(newMessage);
         incrementClock(newMessage.getOriginalSenderInfo().getId());
 
         checkPendingMessages();
@@ -112,13 +124,26 @@ public class CausalBroadcastShared {
                         commitedCausalMessageList.add(pendingMessage);
                         incrementClock(pendingMessage.getOriginalSenderInfo().getId());
 
-                        boolean didPut;//todo stavi za ostale
+                        boolean didPut;
 
-                        //todo dodaj primanje osalih vrsta poruka
-                        if (Objects.requireNonNull(pendingMessage.getMessageType()) == MessageType.TRANSACTION) {
-                            if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
-                                committedMessagesThreadPool.submit(new TransactionHandler(basicMessage, snapshotCollector.getBitcakeManager()));
+                        switch (basicMessage.getMessageType()){
+                            case TRANSACTION -> {
+                                if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
+                                    committedMessagesThreadPool.submit(new TransactionHandler(basicMessage, snapshotCollector.getBitcakeManager()));
+                            }
+                            case AB_ASK -> {//todo check
+                                didPut = receivedAbAsk.add(basicMessage);
+                                if (didPut) committedMessagesThreadPool.submit(new AbAskHandler(basicMessage, snapshotCollector));
+                            }
+                            case AB_TELL -> {//todo check
+                                if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
+                                    committedMessagesThreadPool.submit(new AbTellHandler(basicMessage, snapshotCollector));
+
+                            }
+                            case AV_ASK -> {}//todo av ask
+                            case AV_TELL -> {}//todo av tell
                         }
+
                         iterator.remove();
                         break;
                     }

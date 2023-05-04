@@ -1,16 +1,18 @@
 package app.snapshot_bitcake;
 
 import app.AppConfig;
+import app.CausalBroadcastShared;
 import app.snapshot_bitcake.ab.AbBitCakeManager;
 import app.snapshot_bitcake.ab.AbSnapshotResult;
 import app.snapshot_bitcake.av.AvBitCakeManager;
+import servent.message.Message;
+import servent.message.snapshot.AbAskTokenMessage;
+import servent.message.util.MessageUtil;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
@@ -22,20 +24,15 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class SnapshotCollectorWorker implements SnapshotCollector {
 
     private volatile boolean working = true;
-
     private final AtomicBoolean collecting = new AtomicBoolean(false);
 
-    private final Map<String, Integer> collectedNaiveValues = new ConcurrentHashMap<>();
-    private final Map<Integer, AbSnapshotResult> collectedABValues = new ConcurrentHashMap<>();
-    private final List<Integer> collectedDoneMessages = new CopyOnWriteArrayList<>();
+    private final Map<String, AbSnapshotResult> collectedAbValues = new ConcurrentHashMap<>();
 
     private final SnapshotType snapshotType;
-
     private BitcakeManager bitcakeManager;
 
     public SnapshotCollectorWorker(SnapshotType snapshotType) {
         this.snapshotType = snapshotType;
-
         switch (snapshotType) {
             case AB -> bitcakeManager = new AbBitCakeManager();
             case AV -> bitcakeManager = new AvBitCakeManager();
@@ -51,10 +48,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
         return bitcakeManager;
     }
 
-    @Override
-    public void addAbSnapshotInfo(int id, AbSnapshotResult abSnapshotResult) {
-
-    }
 
     @Override
     public void run() {
@@ -82,23 +75,52 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
              * 2. Wait for all the responses
              * 3. Print result
              */
+            Map<Integer, Integer> vectorClock;
+            Message askMessage;
 
-            //1 send asks
-            //todo dodaj casove za AB i AV snapshotove
-            if (Objects.requireNonNull(snapshotType) == SnapshotType.NONE) {//Shouldn't be able to come here. See constructor.
+            switch (snapshotType) {
+                case AB -> {
+                    System.out.println("COLL- USLI SMO U FAZU 1");
+
+                    //napravimo novi ask message
+                    vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
+                    askMessage = new AbAskTokenMessage(AppConfig.myServentInfo, null, null, vectorClock);
+
+                    //piramo za stanje sve susede
+                    for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
+                        askMessage = askMessage.changeReceiver(neighbor);
+                        MessageUtil.sendMessage(askMessage);
+                    }
+
+                    //sacuvamo nase stanje (on onoga koji je posalo ask)
+                    AbSnapshotResult abSnapshotResult = new AbSnapshotResult(
+                            AppConfig.myServentInfo.getId(),
+                            bitcakeManager.getCurrentBitcakeAmount(),
+                            CausalBroadcastShared.getSendTransactions(),
+                            CausalBroadcastShared.getReceivedTransactions());
+                    collectedAbValues.put("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);
+
+                    CausalBroadcastShared.commitCausalMessage(askMessage);//TODO promeni ovo govno
+                }
+                case AV -> {} //todo av ask message
+
+                case NONE -> System.out.println("Error snapshot type is null");
             }
+
 
             //2 wait for responses or finish
             boolean waiting = true;
             while (waiting) {
                 switch (snapshotType) {
-
-                    case AB -> {
-                    } //todo AB snapshot collector
-                    case AV -> {
-                    } //todo AV snapshot collector
-                    case NONE -> System.out.println("CRITICAL ERROR");
-
+                    case AB -> {//ako smo sakupili sve tellMessages mozes da printas
+                        System.out.println("COLL FAZA 2 - " + collectedAbValues.size() + " == " + AppConfig.getServentCount());
+                        if (collectedAbValues.size() == AppConfig.getServentCount()) {
+                            System.out.println("COLL- IZASLI SMO IZ FAZE 2");
+                            waiting = false;
+                        }
+                    }
+                    case AV -> {} //todo AV snapshot collector
+                    case NONE -> System.out.println("Error snapshot type is null");
                     //Shouldn't be able to come here. See constructor.
                 }
 
@@ -107,38 +129,54 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
-                if (!working) {
-                    return;
-                }
+                if (!working) return;
             }
 
             //print
-            int sum;
+            int sum = 0;
             switch (snapshotType) {
-                case NAIVE:
-                    sum = 0;
-                    for (Entry<String, Integer> itemAmount : collectedNaiveValues.entrySet()) {
-                        sum += itemAmount.getValue();
-                        AppConfig.timestampedStandardPrint(
-                                "Info for " + itemAmount.getKey() + " = " + itemAmount.getValue() + " bitcake");
+                case AB -> {
+                    System.out.println("COLL- USLI SMO U FAZU 3");
+
+                    for (Entry<String, AbSnapshotResult> abSR : collectedAbValues.entrySet()) {
+                        boolean exist = false;
+                        int bitCakeAmount = abSR.getValue().getBitCakeAmount();
+                        List<Message> sentTransactions = abSR.getValue().getSentTransactions();
+
+                        sum += bitCakeAmount;
+                        AppConfig.timestampedStandardPrint("Snapshot for " + abSR.getKey() + " = " + bitCakeAmount + " bitcake");
+
+                        for (Message sentTransaction : sentTransactions) {
+                            AbSnapshotResult abSnapshotResult = collectedAbValues.get("node " + sentTransaction.getOriginalReceiverInfo().getId());
+                            List<Message> receivedTransactions = abSnapshotResult.getReceivedTransactions();
+
+                            for (Message receivedTransaction : receivedTransactions) {
+                                if (sentTransaction.getMessageId() == receivedTransaction.getMessageId() &&
+                                        sentTransaction.getOriginalSenderInfo().getId() == receivedTransaction.getOriginalSenderInfo().getId() &&
+                                        sentTransaction.getOriginalReceiverInfo().getId() == receivedTransaction.getOriginalReceiverInfo().getId()) {
+                                    exist = true;
+                                    break;
+                                }
+                            }
+
+                            if (!exist) {
+                                AppConfig.timestampedStandardPrint("Info for unprocessed transaction: " + sentTransaction.getMessageText() + " bitcake");
+                                int amountNumber = Integer.parseInt(sentTransaction.getMessageText());
+                                sum += amountNumber;
+                            }
+                        }
                     }
-
                     AppConfig.timestampedStandardPrint("System bitcake count: " + sum);
-
-                    collectedNaiveValues.clear(); //reset for next invocation
-                    break;
-
-
-                case NONE:
-                    //Shouldn't be able to come here. See constructor.
-                    break;
+                    collectedAbValues.clear();
+                }
+                case AV -> {}//todo print av
+                case NONE -> System.out.println("Error snapshot type is null");
+                //Shouldn't be able to come here. See constructor.
             }
             collecting.set(false);
         }
 
     }
-
 
     @Override
     public void startCollecting() {
@@ -159,4 +197,8 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
         return collecting.get();
     }
 
+    @Override
+    public Map<String, AbSnapshotResult> getCollectedAbValues() {
+        return collectedAbValues;
+    }
 }

@@ -17,12 +17,9 @@ public class BitcakeInfoCommand implements CLICommand {
     }
 
     @Override
-    public void execute(String args) {//todo
-        if (!collector.isCollecting())
-            collector.startCollecting();
-        else
-            AppConfig.timestampedErrorPrint("Already collecting");
-
+    public void execute(String args) {
+        AppConfig.timestampedStandardPrint("Start collecting bitcake_info");
+        collector.startCollecting();
     }
 
 }

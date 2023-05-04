@@ -103,9 +103,8 @@ public class MultipleServentStarter {
     }
 
     public static void main(String[] args) {
-//		startServentTest("snapshot-primer");
-
-        startServentTest("ab_snapshot");
+        startServentTest("ab_test");
+//        startServentTest("ab_snapshot");
 //		startServentTest("av_snapshot");
     }
 

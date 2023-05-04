@@ -3,6 +3,8 @@ package app.snapshot_bitcake;
 import app.Cancellable;
 import app.snapshot_bitcake.ab.AbSnapshotResult;
 
+import java.util.Map;
+
 /**
  * Describes a snapshot collector. Made not-so-flexibly for readability.
  *
@@ -12,8 +14,6 @@ public interface SnapshotCollector extends Runnable, Cancellable {
 
     BitcakeManager getBitcakeManager();
 
-    void addAbSnapshotInfo(int id, AbSnapshotResult abSnapshotResult);
-
     void startCollecting();
 
 //	void addDoneMessage(int id);
@@ -21,4 +21,6 @@ public interface SnapshotCollector extends Runnable, Cancellable {
 //	void setTerminateNotArrived();
 
     boolean isCollecting();
+
+    public Map<String, AbSnapshotResult> getCollectedAbValues();
 }

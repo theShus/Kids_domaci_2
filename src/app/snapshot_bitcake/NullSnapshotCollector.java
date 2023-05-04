@@ -2,6 +2,8 @@ package app.snapshot_bitcake;
 
 import app.snapshot_bitcake.ab.AbSnapshotResult;
 
+import java.util.Map;
+
 /**
  * This class is used if the user hasn't specified a snapshot type in config.
  *
@@ -22,10 +24,6 @@ public class NullSnapshotCollector implements SnapshotCollector {
         return null;
     }
 
-    @Override
-    public void addAbSnapshotInfo(int id, AbSnapshotResult abSnapshotResult) {
-
-    }
 
     @Override
     public void startCollecting() {
@@ -34,6 +32,11 @@ public class NullSnapshotCollector implements SnapshotCollector {
     @Override
     public boolean isCollecting() {
         return false;
+    }
+
+    @Override
+    public Map<String, AbSnapshotResult> getCollectedAbValues() {
+        return null;
     }
 
 }

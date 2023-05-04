@@ -1,27 +1,5 @@
-21:20:35 - Starting servent [3|localhost|1400]
-21:20:35 - Pausing for 15000 ms
-21:20:37 - Got message [1|24|5|TRANSACTION|3]
-21:20:37 - Committing [1|24|5|TRANSACTION|3]
-21:20:37 - Rebroadcasting... 1
-21:20:37 - Got message [1|5|4|TRANSACTION|3]
-21:20:37 - Committing [1|5|4|TRANSACTION|3]
-21:20:37 - Rebroadcasting... 2
-21:20:37 - Got message [1|22|3|TRANSACTION|2]
-21:20:37 - Committing [1|22|3|TRANSACTION|2]
-21:20:37 - Rebroadcasting... 3
-21:20:37 - Got message [1|10|4|TRANSACTION|4]
-21:20:37 - Committing [1|10|4|TRANSACTION|4]
-21:20:37 - Rebroadcasting... 4
-21:20:37 - Got message [1|13|3|TRANSACTION|4]
-21:20:37 - Committing [1|13|3|TRANSACTION|4]
-21:20:37 - Rebroadcasting... 5
-21:20:37 - Got message [1|7|5|TRANSACTION|3]
-21:20:37 - Committing [1|7|5|TRANSACTION|3]
-21:20:37 - Rebroadcasting... 6
-21:20:38 - Sending message [1|24|5|TRANSACTION|3]
-21:20:38 - Sending message [1|22|3|TRANSACTION|2]
-21:20:38 - Sending message [1|10|4|TRANSACTION|4]
-21:20:38 - Sending message [1|13|3|TRANSACTION|4]
-21:20:38 - Sending message [1|7|5|TRANSACTION|3]
-21:20:38 - Sending message [1|5|4|TRANSACTION|3]
-21:20:50 - Stopping...
+11:02:12 - Starting servent [3|localhost|1400]
+11:02:12 - Pausing for 15000 ms
+11:02:27 - CLOCK - {}
+11:02:27 - BITCAKES -1000
+11:02:27 - Stopping...
