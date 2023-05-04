@@ -14,7 +14,6 @@ import java.util.function.BiFunction;
 
 public class CausalBroadcastShared {
     private static final Map<Integer, Integer> vectorClock = new ConcurrentHashMap<>();
-    private static final List<Message> commitedCausalMessageList = new CopyOnWriteArrayList<>();
     private static final Queue<Message> pendingMessages = new ConcurrentLinkedQueue<>();
     private static final Object pendingMessagesLock = new Object();
     private static final ExecutorService committedMessagesThreadPool = Executors.newWorkStealingPool();
@@ -32,15 +31,15 @@ public class CausalBroadcastShared {
     }
 
     public static void incrementClock(int serventId) {
-        vectorClock.computeIfPresent(serventId, (key, oldValue) -> oldValue+1);
+//        vectorClock.computeIfPresent(serventId, (key, oldValue) -> oldValue+1);
 
-//        vectorClock.computeIfPresent(serventId, new BiFunction<Integer, Integer, Integer>() {
-//
-//            @Override
-//            public Integer apply(Integer key, Integer oldValue) {
-//                return oldValue + 1;
-//            }
-//        });
+        vectorClock.computeIfPresent(serventId, new BiFunction<Integer, Integer, Integer>() {
+
+            @Override
+            public Integer apply(Integer key, Integer oldValue) {
+                return oldValue + 1;
+            }
+        });
     }
 
     public static Map<Integer, Integer> getVectorClock() {
@@ -90,11 +89,6 @@ public class CausalBroadcastShared {
         return sendTransactions;
     }
 
-    public static List<Message> getCommitedCausalMessages() {
-        List<Message> toReturn = new CopyOnWriteArrayList<>(commitedCausalMessageList);
-
-        return toReturn;
-    }
 
     public static void commitCausalMessage(Message newMessage) {
         AppConfig.timestampedStandardPrint("-Committing- " + newMessage);
@@ -123,7 +117,6 @@ public class CausalBroadcastShared {
                         gotWork = true;
 
                         AppConfig.timestampedStandardPrint("Committing " + pendingMessage);
-                        commitedCausalMessageList.add(pendingMessage);
                         incrementClock(pendingMessage.getOriginalSenderInfo().getId());
 
                         boolean didPut;

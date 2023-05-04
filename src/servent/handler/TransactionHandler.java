@@ -1,9 +1,9 @@
 package servent.handler;
 
 import app.AppConfig;
+import app.CausalBroadcastShared;
 import app.snapshot_bitcake.BitcakeManager;
 import app.snapshot_bitcake.ab.AbBitCakeManager;
-import app.snapshot_bitcake.av.AvBitCakeManager;
 import servent.message.Message;
 import servent.message.MessageType;
 
@@ -29,19 +29,10 @@ public class TransactionHandler implements MessageHandler {
                 AppConfig.timestampedErrorPrint("Couldn't parse amount: " + amountString);
                 return;
             }
-
             bitcakeManager.addSomeBitcakes(amountNumber);
-
-//            synchronized (AppConfig.syncHole) {
-                if (bitcakeManager instanceof AbBitCakeManager) {
-                    //todo uradi snimanje
-//                    abBitcakeManager.recordGetTransaction(clientMessage.getOriginalSenderInfo().getId(), amountNumber);
-                }
-                else if (bitcakeManager instanceof AvBitCakeManager) {
-                    //todo uradi snimanje
-//                    avBitcakeManager.recordGetTransaction(clientMessage.getSenderVectorClock(), clientMessage.getOriginalSenderInfo().getId(), amountNumber);
-                }
-//            }
+            if (bitcakeManager instanceof AbBitCakeManager) {
+                CausalBroadcastShared.addReceivedTransaction(clientMessage);
+            }
         }
         else {
             AppConfig.timestampedErrorPrint("Transaction handler got: " + clientMessage);

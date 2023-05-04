@@ -80,8 +80,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
             switch (snapshotType) {
                 case AB -> {
-                    System.out.println("COLL- USLI SMO U FAZU 1");
-
                     //napravimo novi ask message
                     vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
                     askMessage = new AbAskTokenMessage(AppConfig.myServentInfo, null, null, vectorClock);
@@ -114,9 +112,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
             while (waiting) {
                 switch (snapshotType) {
                     case AB -> {//ako smo sakupili sve tellMessages mozes da printas
-                        System.out.println("COLL FAZA 2 - " + collectedAbValues.size() + " == " + AppConfig.getServentCount());
                         if (collectedAbValues.size() == AppConfig.getServentCount()) {
-                            System.out.println("COLL- IZASLI SMO IZ FAZE 2");
                             waiting = false;
                         }
                     }
@@ -137,8 +133,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
             int sum = 0;
             switch (snapshotType) {
                 case AB -> {
-                    System.out.println("COLL- USLI SMO U FAZU 3");
-
                     for (Entry<String, AbSnapshotResult> abSR : collectedAbValues.entrySet()) {
                         boolean exist = false;
                         int bitCakeAmount = abSR.getValue().getBitCakeAmount();
@@ -200,7 +194,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
     @Override
     public void test(String key, AbSnapshotResult abSnapshotResult) {
-        System.out.println("COLL STAVILI SMO " + key);
         collectedAbValues.put(key, abSnapshotResult);
     }
 

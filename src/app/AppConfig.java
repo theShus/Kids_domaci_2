@@ -186,6 +186,7 @@ public class AppConfig {
             ServentInfo newInfo = new ServentInfo("localhost", i, serventPort, neighborList);
             serventInfoList.add(newInfo);
         }
+        CausalBroadcastShared.initializeVectorClock(serventCount);
     }
 
     /**
