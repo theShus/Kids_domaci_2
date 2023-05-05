@@ -4,6 +4,7 @@ import app.AppConfig;
 import app.CausalBroadcastShared;
 import app.snapshot_bitcake.BitcakeManager;
 import app.snapshot_bitcake.ab.AbBitCakeManager;
+import app.snapshot_bitcake.av.AvBitCakeManager;
 import servent.message.Message;
 import servent.message.MessageType;
 
@@ -30,10 +31,16 @@ public class TransactionHandler implements MessageHandler {
                 return;
             }
             bitcakeManager.addSomeBitcakes(amountNumber);
-            if (bitcakeManager instanceof AbBitCakeManager) {//todo ovde ab transakcija
+
+            if (bitcakeManager instanceof AbBitCakeManager) {
                 CausalBroadcastShared.addReceivedTransaction(clientMessage);
             }
-        } else {
+            else if (bitcakeManager instanceof AvBitCakeManager){
+                //todo odradi AV transactino snimanje
+            }
+
+        }
+        else {
             AppConfig.timestampedErrorPrint("Transaction handler got: " + clientMessage);
         }
     }

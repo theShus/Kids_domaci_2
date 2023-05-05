@@ -30,6 +30,16 @@ public class NullSnapshotCollector implements SnapshotCollector {
     }
 
     @Override
+    public void addDoneMessage(int id) {
+
+    }
+
+    @Override
+    public void clearCollectedDoneValues() {
+
+    }
+
+    @Override
     public Map<String, AbSnapshotResult> getCollectedAbValues() {
         return null;
     }

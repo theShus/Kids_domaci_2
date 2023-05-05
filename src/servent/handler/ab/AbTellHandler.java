@@ -1,4 +1,4 @@
-package servent.handler.snapshot;
+package servent.handler.ab;
 
 import app.AppConfig;
 import app.snapshot_bitcake.SnapshotCollector;
@@ -6,7 +6,7 @@ import app.snapshot_bitcake.ab.AbSnapshotResult;
 import servent.handler.MessageHandler;
 import servent.message.Message;
 import servent.message.MessageType;
-import servent.message.snapshot.AbTellMessage;
+import servent.message.ab.AbTellMessage;
 
 public class AbTellHandler implements MessageHandler {
 

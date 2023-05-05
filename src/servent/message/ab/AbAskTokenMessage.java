@@ -1,4 +1,4 @@
-package servent.message.snapshot;
+package servent.message.ab;
 
 import app.ServentInfo;
 import servent.message.BasicMessage;
@@ -10,7 +10,7 @@ import java.util.Map;
 public class AbAskTokenMessage extends BasicMessage {
 
     @Serial
-    private static final long serialVersionUID = -1189395068257017543L;
+    private static final long serialVersionUID = 1853366263213235244L;
 
     public AbAskTokenMessage(ServentInfo sender, ServentInfo receiver, ServentInfo neighbor, Map<Integer, Integer> senderVectorClock) {
         super(MessageType.AB_ASK, sender, receiver, neighbor, senderVectorClock);

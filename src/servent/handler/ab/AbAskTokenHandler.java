@@ -1,4 +1,4 @@
-package servent.handler.snapshot;
+package servent.handler.ab;
 
 import app.AppConfig;
 import app.CausalBroadcastShared;
@@ -6,18 +6,18 @@ import app.snapshot_bitcake.SnapshotCollector;
 import servent.handler.MessageHandler;
 import servent.message.Message;
 import servent.message.MessageType;
-import servent.message.snapshot.AbTellMessage;
+import servent.message.ab.AbTellMessage;
 import servent.message.util.MessageUtil;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class AbAskHandler implements MessageHandler {
+public class AbAskTokenHandler implements MessageHandler {
 
     private final Message clientMessage;
     private final SnapshotCollector snapshotCollector;
 
-    public AbAskHandler(Message clientMessage, SnapshotCollector snapshotCollector) {
+    public AbAskTokenHandler(Message clientMessage, SnapshotCollector snapshotCollector) {
         this.clientMessage = clientMessage;
         this.snapshotCollector = snapshotCollector;
     }
@@ -28,8 +28,7 @@ public class AbAskHandler implements MessageHandler {
             int currentAmount = snapshotCollector.getBitcakeManager().getCurrentBitcakeAmount();
             Map<Integer, Integer> vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
 
-            Message tellMessage = new AbTellMessage(
-                    AppConfig.myServentInfo, clientMessage.getOriginalSenderInfo(),
+            Message tellMessage = new AbTellMessage(AppConfig.myServentInfo, clientMessage.getOriginalSenderInfo(),
                     null, vectorClock, currentAmount,
                     CausalBroadcastShared.getSentTransactions(),
                     CausalBroadcastShared.getReceivedTransactions()

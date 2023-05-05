@@ -16,9 +16,10 @@ public interface SnapshotCollector extends Runnable, Cancellable {
 
     void startCollecting();
 
-//	void addDoneMessage(int id);
+	void addDoneMessage(int id);
 
-//	void setTerminateNotArrived();
+	void clearCollectedDoneValues();
 
-    public Map<String, AbSnapshotResult> getCollectedAbValues();
+    Map<String, AbSnapshotResult> getCollectedAbValues();
+
 }

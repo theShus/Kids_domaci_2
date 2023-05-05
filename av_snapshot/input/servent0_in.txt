@@ -1,6 +1,5 @@
 pause 1000
 transaction_burst
-pause 45000
-print_vector_clock
-pause 2000
+pause 20000
+info
 stop

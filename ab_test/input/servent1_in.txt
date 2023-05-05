@@ -1,4 +1,0 @@
-transaction_burst
-pause 30000
-info
-stop

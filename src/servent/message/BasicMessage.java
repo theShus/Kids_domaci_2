@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class BasicMessage implements Message {
 
     @Serial
-    private static final long serialVersionUID = -9075856313609777945L;
+    private static final long serialVersionUID = 8087021439630569754L;
     private final MessageType type;
     private final ServentInfo originalSenderInfo;
     private final ServentInfo originalReceiverInfo;
@@ -56,6 +56,18 @@ public class BasicMessage implements Message {
         this.senderVectorClock = new ConcurrentHashMap<>(senderVectorClock);
         this.messageText = messageText;
         this.messageId = messageCounter.getAndIncrement();
+    }
+
+    protected BasicMessage(MessageType type, ServentInfo originalSenderInfo, ServentInfo originalReceiverInfo,
+                           ServentInfo receiverInfo, Map<Integer, Integer> senderVectorClock, List<ServentInfo> routeList, String messageText, int messageId) {
+        this.type = type;
+        this.originalSenderInfo = originalSenderInfo;
+        this.originalReceiverInfo = originalReceiverInfo;
+        this.receiverInfo = receiverInfo;
+        this.routeList = routeList;
+        this.senderVectorClock = senderVectorClock;
+        this.messageText = messageText;
+        this.messageId = messageId;
     }
 
 
@@ -104,21 +116,6 @@ public class BasicMessage implements Message {
     }
 
 
-    protected BasicMessage(MessageType type, ServentInfo originalSenderInfo, ServentInfo originalReceiverInfo,
-                           ServentInfo receiverInfo, Map<Integer, Integer> senderVectorClock,
-                           List<ServentInfo> routeList, String messageText, int messageId) {
-        this.type = type;
-        this.originalSenderInfo = originalSenderInfo;
-        this.originalReceiverInfo = originalReceiverInfo;
-        this.receiverInfo = receiverInfo;
-        this.routeList = routeList;
-        this.senderVectorClock = senderVectorClock;
-        this.messageText = messageText;
-
-        this.messageId = messageId;
-    }
-
-
     /**
      * Used when resending a message. It will not change the original owner
      * (so equality is not affected), but will add us to the route list, so
@@ -152,18 +149,14 @@ public class BasicMessage implements Message {
         if (AppConfig.myServentInfo.getNeighbors().contains(newReceiverId)) {
             ServentInfo newReceiverInfo = AppConfig.getInfoById(newReceiverId);
 
-            Message toReturn = new BasicMessage(getMessageType(),
-                    getOriginalSenderInfo(), getOriginalReceiverInfo(),
-                    newReceiverInfo, getSenderVectorClock(),
-                    getRoute(), getMessageText(), getMessageId());
+            Message toReturn = new BasicMessage(getMessageType() ,getOriginalSenderInfo(), getOriginalReceiverInfo(),
+                    newReceiverInfo, getSenderVectorClock(), getRoute(), getMessageText(), getMessageId());
 
             return toReturn;
         } else {
             AppConfig.timestampedErrorPrint("Trying to make a message for " + newReceiverId + " who is not a neighbor.");
-
             return null;
         }
-
     }
 
     /**
@@ -195,7 +188,7 @@ public class BasicMessage implements Message {
     @Override
     public String toString() {
         return "[ogS:" + getOriginalSenderInfo().getId() + "|mId:" + getMessageId() + "|mt:" + getMessageText() +
-                "|mt:" + getMessageType() + "|mr:" /*+ getReceiverInfo().getId() */ + "|ogR:" + (getOriginalReceiverInfo() != null ? getOriginalReceiverInfo().getId() : null) + "]";
+                "|mt:" + getMessageType() + "|mr:" + (getReceiverInfo() != null ? getReceiverInfo().getId() : null) + "|ogR:" + (getOriginalReceiverInfo() != null ? getOriginalReceiverInfo().getId() : null) + "]";
     }
 
 

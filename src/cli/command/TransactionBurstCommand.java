@@ -47,8 +47,9 @@ public class TransactionBurstCommand implements CLICommand {
                     if (snapshotCollector.getBitcakeManager() instanceof AbBitCakeManager) {
                         CausalBroadcastShared.addSentTransaction(transactionMessage);
                     }
-                    else if (snapshotCollector.getBitcakeManager() instanceof AvBitCakeManager) {
-                        //todo uradi zapisujemo za av
+                    else if (snapshotCollector.getBitcakeManager() instanceof AvBitCakeManager) {//todo 1 proveri av burst command
+                        CausalBroadcastShared.recordGiveTransaction(transactionMessage.getSenderVectorClock(), receiverInfo.getId(), amount);
+                        System.out.println("### SNIMIO SAM GIVE TRANS");
                     }
 
                     // reduce our bitcake count then send the message

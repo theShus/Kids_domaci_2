@@ -6,13 +6,16 @@ import app.snapshot_bitcake.ab.AbBitCakeManager;
 import app.snapshot_bitcake.ab.AbSnapshotResult;
 import app.snapshot_bitcake.av.AvBitCakeManager;
 import servent.message.Message;
-import servent.message.snapshot.AbAskTokenMessage;
+import servent.message.ab.AbAskTokenMessage;
+import servent.message.av.AvAskTokenMessage;
+import servent.message.av.AvTerminateMessage;
 import servent.message.util.MessageUtil;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
@@ -27,6 +30,9 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
     private final AtomicBoolean collecting = new AtomicBoolean(false);
 
     private final Map<String, AbSnapshotResult> collectedAbValues = new ConcurrentHashMap<>();
+    private final List<Integer> collectedDoneMessages = new CopyOnWriteArrayList<>();
+
+    private boolean test = true;
 
     private final SnapshotType snapshotType;
     private BitcakeManager bitcakeManager;
@@ -52,6 +58,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
     @Override
     public void run() {
         while (working) {
+            System.out.println("### AKTIVIRAO SE COLLECTOR");
 
             /*
              * Not collecting yet - just sleep until we start actual work, or finish
@@ -76,8 +83,10 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
              */
             Map<Integer, Integer> vectorClock;
             Message askMessage;
+            System.out.println("### pre izbora kurca");
 
             switch (snapshotType) {
+
                 case AB -> {
                     //napravimo novi ask message
                     vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
@@ -96,10 +105,32 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                             CausalBroadcastShared.getSentTransactions(),
                             CausalBroadcastShared.getReceivedTransactions());
                     collectedAbValues.put("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);
+
                     CausalBroadcastShared.causalClockIncrement(askMessage);
                 }
+                //todo 3 proveri av send ask (token) msg
                 case AV -> {
-                } //todo av ask message
+                    System.out.println("### USLI SMO U AV SENT TOKEN");
+                    vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
+                    CausalBroadcastShared.initiatorId = AppConfig.myServentInfo.getId();
+
+                    for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
+                        CausalBroadcastShared.getChannel.put(neighbor, 0);
+                        CausalBroadcastShared.giveChannel.put(neighbor, 0);
+                    }
+
+                    CausalBroadcastShared.recordedAmount = bitcakeManager.getCurrentBitcakeAmount();
+                    askMessage = new AvAskTokenMessage(AppConfig.myServentInfo, null, null, vectorClock);
+                    CausalBroadcastShared.tokenVectorClock = askMessage.getSenderVectorClock();
+
+                    for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
+                        askMessage = askMessage.changeReceiver(neighbor);
+                        System.out.println("neighbor = " + neighbor);
+                        System.out.println("poslali smo PORUKU " + askMessage);
+                        MessageUtil.sendMessage(askMessage);
+                    }
+                    CausalBroadcastShared.causalClockIncrement(askMessage);
+                }
 
                 case NONE -> System.out.println("Error snapshot type is null");
             }
@@ -115,7 +146,23 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                         }
                     }
                     case AV -> {
-                    } //todo AV snapshot collector
+                        System.out.println("### WAIT - collectedDoneMessages.size: " + collectedDoneMessages.size());
+                        if (collectedDoneMessages.size() + 1 == AppConfig.getServentCount()) {
+                            waiting = false;
+
+                            vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
+                            Message terminateMessage = new AvTerminateMessage(AppConfig.myServentInfo, null, null, vectorClock);
+
+                            for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
+                                terminateMessage = terminateMessage.changeReceiver(neighbor);
+                                MessageUtil.sendMessage(terminateMessage);
+                            }
+                            CausalBroadcastShared.addPendingMessage(terminateMessage);
+                            CausalBroadcastShared.checkPendingMessages();
+                            System.out.println("### ZAVRSILI SMO AV WAIT");
+
+                        }
+                    }
                     case NONE -> System.out.println("Error snapshot type is null");
                     //Shouldn't be able to come here. See constructor.
                 }
@@ -166,7 +213,16 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                     collectedAbValues.clear();
                 }
                 case AV -> {
-                }//todo print av
+                    System.out.println("KURCINA");
+                    while (test){
+                        System.out.println("I TO DEBELA");
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
                 case NONE -> System.out.println("Error snapshot type is null");
                 //Shouldn't be able to come here. See constructor.
             }
@@ -177,11 +233,26 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
     @Override
     public void startCollecting() {
+        System.out.println("### KURACC " + collecting);
+
         boolean oldValue = this.collecting.getAndSet(true);
+
+        System.out.println("### KURACC " + collecting);
 
         if (oldValue) {
             AppConfig.timestampedErrorPrint("Tried to start collecting before finished with previous.");
         }
+    }
+
+    @Override
+    public void addDoneMessage(int id) {
+        collectedDoneMessages.add(id);
+    }
+
+    @Override
+    public void clearCollectedDoneValues() {
+        test = false;
+        collectedDoneMessages.clear();
     }
 
     @Override

@@ -1,13 +1,518 @@
-KURACCCC
-18:01:48 - Starting servent [3|localhost|1400]
-18:01:48 - Pausing for 45000 ms
-18:02:33 - 142
-18:02:33 - 199
-18:02:33 - 196
-18:02:33 - 1
-18:02:33 - 101
-18:02:33 - 145
-18:02:33 - 200
-18:02:33 - Pending messages are empty: false
-18:02:33 - Pausing for 2000 ms
-18:02:35 - Stopping...
+20:41:45 - Starting servent [3|localhost|1400]
+### AKTIVIRAO SE COLLECTOR
+20:41:45 - Pausing for 30000 ms
+20:41:45 - Got message [ogS:4|mId:15|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:45 - Rebroadcasting... 1
+20:41:45 - Got message [ogS:4|mId:13|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+20:41:45 - Rebroadcasting... 2
+20:41:45 - Got message [ogS:4|mId:12|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+20:41:45 - Rebroadcasting... 3
+20:41:45 - Got message [ogS:4|mId:20|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+20:41:45 - Rebroadcasting... 4
+20:41:45 - Got message [ogS:4|mId:23|mt:3|mt:TRANSACTION|mr:3|ogR:2]
+20:41:45 - Rebroadcasting... 5
+20:41:45 - Got message [ogS:4|mId:0|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:45 - Committing [ogS:4|mId:0|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:45 - Rebroadcasting... 6
+20:41:45 - Got message [ogS:4|mId:6|mt:5|mt:TRANSACTION|mr:3|ogR:2]
+20:41:45 - Rebroadcasting... 7
+20:41:45 - Got message [ogS:4|mId:2|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+20:41:45 - Rebroadcasting... 8
+20:41:46 - Got message [ogS:4|mId:10|mt:5|mt:TRANSACTION|mr:3|ogR:1]
+20:41:46 - Rebroadcasting... 9
+20:41:46 - Got message [ogS:4|mId:9|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+20:41:46 - Rebroadcasting... 10
+20:41:46 - Got message [ogS:4|mId:7|mt:4|mt:TRANSACTION|mr:3|ogR:0]
+20:41:46 - Rebroadcasting... 11
+20:41:46 - Got message [ogS:4|mId:21|mt:4|mt:TRANSACTION|mr:3|ogR:1]
+20:41:46 - Rebroadcasting... 12
+20:41:46 - Got message [ogS:4|mId:14|mt:4|mt:TRANSACTION|mr:3|ogR:0]
+20:41:46 - Rebroadcasting... 13
+20:41:46 - Got message [ogS:4|mId:18|mt:2|mt:TRANSACTION|mr:3|ogR:2]
+20:41:46 - Rebroadcasting... 14
+20:41:46 - Got message [ogS:4|mId:4|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+20:41:46 - Rebroadcasting... 15
+20:41:46 - Got message [ogS:4|mId:11|mt:2|mt:TRANSACTION|mr:3|ogR:2]
+20:41:46 - Rebroadcasting... 16
+20:41:46 - Got message [ogS:4|mId:22|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+20:41:46 - Rebroadcasting... 17
+20:41:46 - Got message [ogS:4|mId:5|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+20:41:46 - Rebroadcasting... 18
+20:41:46 - Got message [ogS:4|mId:16|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+20:41:46 - Rebroadcasting... 19
+20:41:46 - Got message [ogS:4|mId:17|mt:4|mt:TRANSACTION|mr:3|ogR:1]
+20:41:46 - Rebroadcasting... 20
+20:41:46 - Got message [ogS:1|mId:20|mt:4|mt:TRANSACTION|mr:3|ogR:4]
+20:41:46 - Rebroadcasting... 21
+20:41:46 - Sending message [ogS:4|mId:0|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:46 - Got message [ogS:4|mId:8|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+20:41:46 - Rebroadcasting... 22
+20:41:46 - Got message [ogS:4|mId:19|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+20:41:46 - Rebroadcasting... 23
+20:41:46 - Got message [ogS:1|mId:22|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+20:41:46 - Rebroadcasting... 24
+20:41:46 - Got message [ogS:1|mId:18|mt:2|mt:TRANSACTION|mr:3|ogR:2]
+20:41:46 - Rebroadcasting... 25
+20:41:46 - Sending message [ogS:4|mId:15|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:46 - Got message [ogS:4|mId:3|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+20:41:46 - Rebroadcasting... 26
+20:41:46 - Got message [ogS:4|mId:24|mt:5|mt:TRANSACTION|mr:3|ogR:1]
+20:41:46 - Rebroadcasting... 27
+20:41:46 - Got message [ogS:4|mId:1|mt:4|mt:TRANSACTION|mr:3|ogR:1]
+20:41:46 - Committing [ogS:4|mId:1|mt:4|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:2|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:3|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:4|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:5|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:6|mt:5|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:7|mt:4|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:8|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:9|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:10|mt:5|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:11|mt:2|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:12|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:13|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:14|mt:4|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:15|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:16|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:17|mt:4|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:18|mt:2|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:19|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:20|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:21|mt:4|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:22|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:23|mt:3|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:46 - Committing [ogS:4|mId:24|mt:5|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:46 - Rebroadcasting... 28
+20:41:46 - Got message [ogS:1|mId:9|mt:1|mt:TRANSACTION|mr:3|ogR:4]
+20:41:46 - Rebroadcasting... 29
+20:41:46 - Got message [ogS:1|mId:8|mt:2|mt:TRANSACTION|mr:3|ogR:4]
+20:41:46 - Rebroadcasting... 30
+20:41:46 - Sending message [ogS:4|mId:6|mt:5|mt:TRANSACTION|mr:4|ogR:2]
+20:41:46 - Sending message [ogS:4|mId:13|mt:5|mt:TRANSACTION|mr:4|ogR:0]
+20:41:46 - Got message [ogS:1|mId:16|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+20:41:46 - Rebroadcasting... 31
+20:41:46 - Sending message [ogS:4|mId:21|mt:4|mt:TRANSACTION|mr:4|ogR:1]
+20:41:46 - Got message [ogS:1|mId:12|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+20:41:46 - Rebroadcasting... 32
+20:41:46 - Got message [ogS:1|mId:13|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:46 - Rebroadcasting... 33
+20:41:46 - Sending message [ogS:4|mId:12|mt:3|mt:TRANSACTION|mr:4|ogR:3]
+20:41:46 - Sending message [ogS:4|mId:20|mt:5|mt:TRANSACTION|mr:4|ogR:3]
+20:41:46 - Sending message [ogS:4|mId:4|mt:4|mt:TRANSACTION|mr:4|ogR:3]
+20:41:46 - Got message [ogS:1|mId:4|mt:3|mt:TRANSACTION|mr:3|ogR:2]
+20:41:46 - Rebroadcasting... 34
+20:41:46 - Got message [ogS:1|mId:19|mt:5|mt:TRANSACTION|mr:3|ogR:2]
+20:41:46 - Rebroadcasting... 35
+20:41:46 - Sending message [ogS:4|mId:22|mt:5|mt:TRANSACTION|mr:4|ogR:0]
+20:41:46 - Got message [ogS:1|mId:0|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:46 - Committing [ogS:1|mId:0|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:46 - Rebroadcasting... 36
+20:41:46 - Got message [ogS:1|mId:11|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+20:41:46 - Rebroadcasting... 37
+20:41:47 - Got message [ogS:1|mId:5|mt:1|mt:TRANSACTION|mr:3|ogR:4]
+20:41:47 - Rebroadcasting... 38
+20:41:47 - Sending message [ogS:4|mId:18|mt:2|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Sending message [ogS:4|mId:23|mt:3|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Got message [ogS:1|mId:15|mt:2|mt:TRANSACTION|mr:3|ogR:4]
+20:41:47 - Rebroadcasting... 39
+20:41:47 - Sending message [ogS:4|mId:19|mt:5|mt:TRANSACTION|mr:4|ogR:0]
+20:41:47 - Got message [ogS:1|mId:14|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:47 - Rebroadcasting... 40
+20:41:47 - Sending message [ogS:4|mId:2|mt:3|mt:TRANSACTION|mr:4|ogR:3]
+20:41:47 - Got message [ogS:1|mId:2|mt:5|mt:TRANSACTION|mr:3|ogR:4]
+20:41:47 - Rebroadcasting... 41
+20:41:47 - Got message [ogS:1|mId:1|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:47 - Committing [ogS:1|mId:1|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:2|mt:5|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:47 - Rebroadcasting... 42
+20:41:47 - Sending message [ogS:4|mId:1|mt:4|mt:TRANSACTION|mr:4|ogR:1]
+20:41:47 - Got message [ogS:1|mId:7|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+20:41:47 - Rebroadcasting... 43
+20:41:47 - Got message [ogS:1|mId:10|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+20:41:47 - Rebroadcasting... 44
+20:41:47 - Sending message [ogS:1|mId:22|mt:1|mt:TRANSACTION|mr:4|ogR:3]
+20:41:47 - Sending message [ogS:4|mId:11|mt:2|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Got message [ogS:1|mId:17|mt:3|mt:TRANSACTION|mr:3|ogR:2]
+20:41:47 - Rebroadcasting... 45
+20:41:47 - Sending message [ogS:4|mId:10|mt:5|mt:TRANSACTION|mr:4|ogR:1]
+20:41:47 - Sending message [ogS:1|mId:18|mt:2|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Got message [ogS:1|mId:3|mt:1|mt:TRANSACTION|mr:3|ogR:0]
+20:41:47 - Committing [ogS:1|mId:3|mt:1|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:4|mt:3|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:5|mt:1|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:47 - Rebroadcasting... 46
+20:41:47 - Got message [ogS:0|mId:16|mt:5|mt:TRANSACTION|mr:3|ogR:2]
+20:41:47 - Rebroadcasting... 47
+20:41:47 - Sending message [ogS:4|mId:8|mt:3|mt:TRANSACTION|mr:4|ogR:1]
+20:41:47 - Sending message [ogS:4|mId:14|mt:4|mt:TRANSACTION|mr:4|ogR:0]
+20:41:47 - Sending message [ogS:4|mId:9|mt:1|mt:TRANSACTION|mr:4|ogR:3]
+20:41:47 - Sending message [ogS:4|mId:7|mt:4|mt:TRANSACTION|mr:4|ogR:0]
+20:41:47 - Sending message [ogS:4|mId:3|mt:2|mt:TRANSACTION|mr:4|ogR:3]
+20:41:47 - Sending message [ogS:1|mId:19|mt:5|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Got message [ogS:0|mId:1|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+20:41:47 - Rebroadcasting... 48
+20:41:47 - Sending message [ogS:1|mId:8|mt:2|mt:TRANSACTION|mr:4|ogR:4]
+20:41:47 - Got message [ogS:0|mId:24|mt:5|mt:TRANSACTION|mr:3|ogR:1]
+20:41:47 - Rebroadcasting... 49
+20:41:47 - Got message [ogS:1|mId:23|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+20:41:47 - Rebroadcasting... 50
+20:41:47 - Got message [ogS:0|mId:7|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+20:41:47 - Rebroadcasting... 51
+20:41:47 - Got message [ogS:1|mId:6|mt:1|mt:TRANSACTION|mr:3|ogR:4]
+20:41:47 - Committing [ogS:1|mId:6|mt:1|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:7|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:8|mt:2|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:9|mt:1|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:10|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:11|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:12|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:13|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:14|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:15|mt:2|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:16|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:17|mt:3|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:18|mt:2|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:19|mt:5|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:20|mt:4|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:47 - Rebroadcasting... 52
+20:41:47 - Sending message [ogS:4|mId:5|mt:4|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Sending message [ogS:4|mId:17|mt:4|mt:TRANSACTION|mr:4|ogR:1]
+20:41:47 - Sending message [ogS:1|mId:13|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Got message [ogS:0|mId:23|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+20:41:47 - Rebroadcasting... 53
+20:41:47 - Sending message [ogS:1|mId:20|mt:4|mt:TRANSACTION|mr:4|ogR:4]
+20:41:47 - Got message [ogS:0|mId:8|mt:2|mt:TRANSACTION|mr:3|ogR:1]
+20:41:47 - Rebroadcasting... 54
+20:41:47 - Sending message [ogS:1|mId:12|mt:1|mt:TRANSACTION|mr:4|ogR:3]
+20:41:47 - Got message [ogS:0|mId:20|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+20:41:47 - Rebroadcasting... 55
+20:41:47 - Got message [ogS:0|mId:9|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+20:41:47 - Rebroadcasting... 56
+20:41:47 - Sending message [ogS:4|mId:16|mt:3|mt:TRANSACTION|mr:4|ogR:1]
+20:41:47 - Sending message [ogS:1|mId:9|mt:1|mt:TRANSACTION|mr:4|ogR:4]
+20:41:47 - Got message [ogS:1|mId:24|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+20:41:47 - Rebroadcasting... 57
+20:41:47 - Got message [ogS:0|mId:0|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:47 - Committing [ogS:0|mId:0|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:0|mId:1|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:47 - Rebroadcasting... 58
+20:41:47 - Sending message [ogS:0|mId:16|mt:5|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Sending message [ogS:1|mId:10|mt:3|mt:TRANSACTION|mr:4|ogR:3]
+20:41:47 - Got message [ogS:1|mId:21|mt:5|mt:TRANSACTION|mr:3|ogR:4]
+20:41:47 - Committing [ogS:1|mId:21|mt:5|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:22|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:23|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:47 - Committing [ogS:1|mId:24|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:47 - Rebroadcasting... 59
+20:41:47 - Sending message [ogS:1|mId:0|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Got message [ogS:0|mId:6|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+20:41:47 - Rebroadcasting... 60
+20:41:47 - Sending message [ogS:1|mId:4|mt:3|mt:TRANSACTION|mr:4|ogR:2]
+20:41:47 - Sending message [ogS:1|mId:3|mt:1|mt:TRANSACTION|mr:4|ogR:0]
+20:41:48 - Sending message [ogS:1|mId:16|mt:1|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Sending message [ogS:4|mId:24|mt:5|mt:TRANSACTION|mr:4|ogR:1]
+20:41:48 - Got message [ogS:0|mId:17|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:48 - Rebroadcasting... 61
+20:41:48 - Got message [ogS:0|mId:2|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+20:41:48 - Committing [ogS:0|mId:2|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Rebroadcasting... 62
+20:41:48 - Got message [ogS:0|mId:21|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+20:41:48 - Rebroadcasting... 63
+20:41:48 - Got message [ogS:0|mId:14|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:48 - Rebroadcasting... 64
+20:41:48 - Got message [ogS:0|mId:11|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+20:41:48 - Rebroadcasting... 65
+20:41:48 - Sending message [ogS:1|mId:15|mt:2|mt:TRANSACTION|mr:4|ogR:4]
+20:41:48 - Sending message [ogS:1|mId:14|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:48 - Sending message [ogS:1|mId:5|mt:1|mt:TRANSACTION|mr:4|ogR:4]
+20:41:48 - Got message [ogS:0|mId:13|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+20:41:48 - Rebroadcasting... 66
+20:41:48 - Got message [ogS:0|mId:10|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+20:41:48 - Rebroadcasting... 67
+20:41:48 - Sending message [ogS:1|mId:23|mt:4|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Sending message [ogS:1|mId:17|mt:3|mt:TRANSACTION|mr:4|ogR:2]
+20:41:48 - Got message [ogS:0|mId:12|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+20:41:48 - Rebroadcasting... 68
+20:41:48 - Got message [ogS:2|mId:6|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+20:41:48 - Rebroadcasting... 69
+20:41:48 - Got message [ogS:0|mId:3|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+20:41:48 - Committing [ogS:0|mId:3|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Rebroadcasting... 70
+20:41:48 - Got message [ogS:0|mId:5|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+20:41:48 - Rebroadcasting... 71
+20:41:48 - Sending message [ogS:1|mId:1|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:48 - Sending message [ogS:0|mId:9|mt:4|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Sending message [ogS:0|mId:8|mt:2|mt:TRANSACTION|mr:4|ogR:1]
+20:41:48 - Got message [ogS:2|mId:21|mt:4|mt:TRANSACTION|mr:3|ogR:4]
+20:41:48 - Rebroadcasting... 72
+20:41:48 - Sending message [ogS:1|mId:11|mt:5|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Sending message [ogS:0|mId:7|mt:3|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Got message [ogS:2|mId:0|mt:1|mt:TRANSACTION|mr:3|ogR:4]
+20:41:48 - Committing [ogS:2|mId:0|mt:1|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:48 - Rebroadcasting... 73
+20:41:48 - Got message [ogS:0|mId:18|mt:3|mt:TRANSACTION|mr:3|ogR:2]
+20:41:48 - Rebroadcasting... 74
+20:41:48 - Sending message [ogS:1|mId:2|mt:5|mt:TRANSACTION|mr:4|ogR:4]
+20:41:48 - Got message [ogS:0|mId:22|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+20:41:48 - Rebroadcasting... 75
+20:41:48 - Sending message [ogS:0|mId:24|mt:5|mt:TRANSACTION|mr:4|ogR:1]
+20:41:48 - Got message [ogS:0|mId:4|mt:5|mt:TRANSACTION|mr:3|ogR:2]
+20:41:48 - Committing [ogS:0|mId:4|mt:5|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:5|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:6|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:7|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:8|mt:2|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:9|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:10|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:11|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:12|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:13|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:14|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:48 - Rebroadcasting... 76
+20:41:48 - Sending message [ogS:1|mId:7|mt:4|mt:TRANSACTION|mr:4|ogR:2]
+20:41:48 - Sending message [ogS:0|mId:14|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:48 - Got message [ogS:0|mId:15|mt:3|mt:TRANSACTION|mr:3|ogR:4]
+20:41:48 - Committing [ogS:0|mId:15|mt:3|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:16|mt:5|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:17|mt:1|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:18|mt:3|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:48 - Rebroadcasting... 77
+20:41:48 - Sending message [ogS:1|mId:24|mt:2|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Got message [ogS:2|mId:10|mt:4|mt:TRANSACTION|mr:3|ogR:0]
+20:41:48 - Rebroadcasting... 78
+20:41:48 - Sending message [ogS:1|mId:6|mt:1|mt:TRANSACTION|mr:4|ogR:4]
+20:41:48 - Got message [ogS:2|mId:14|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+20:41:48 - Rebroadcasting... 79
+20:41:48 - Sending message [ogS:0|mId:23|mt:5|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Got message [ogS:2|mId:1|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+20:41:48 - Committing [ogS:2|mId:1|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:48 - Rebroadcasting... 80
+20:41:48 - Got message [ogS:0|mId:19|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+20:41:48 - Committing [ogS:0|mId:19|mt:4|mt:TRANSACTION|mr:3|ogR:2]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:20|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:21|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:22|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:23|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:48 - Committing [ogS:0|mId:24|mt:5|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:48 - Rebroadcasting... 81
+20:41:48 - Got message [ogS:2|mId:20|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+20:41:48 - Rebroadcasting... 82
+20:41:48 - Got message [ogS:2|mId:8|mt:1|mt:TRANSACTION|mr:3|ogR:0]
+20:41:48 - Rebroadcasting... 83
+20:41:48 - Got message [ogS:2|mId:13|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+20:41:48 - Rebroadcasting... 84
+20:41:48 - Sending message [ogS:0|mId:21|mt:1|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Got message [ogS:2|mId:17|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+20:41:48 - Rebroadcasting... 85
+20:41:48 - Sending message [ogS:0|mId:20|mt:4|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Sending message [ogS:0|mId:0|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:48 - Sending message [ogS:2|mId:0|mt:1|mt:TRANSACTION|mr:4|ogR:4]
+20:41:48 - Sending message [ogS:2|mId:6|mt:3|mt:TRANSACTION|mr:4|ogR:3]
+20:41:48 - Sending message [ogS:0|mId:5|mt:4|mt:TRANSACTION|mr:4|ogR:2]
+20:41:48 - Got message [ogS:2|mId:22|mt:3|mt:TRANSACTION|mr:3|ogR:0]
+20:41:48 - Rebroadcasting... 86
+20:41:49 - Sending message [ogS:0|mId:10|mt:4|mt:TRANSACTION|mr:4|ogR:2]
+20:41:49 - Got message [ogS:2|mId:19|mt:1|mt:TRANSACTION|mr:3|ogR:1]
+20:41:49 - Rebroadcasting... 87
+20:41:49 - Sending message [ogS:0|mId:1|mt:5|mt:TRANSACTION|mr:4|ogR:3]
+20:41:49 - Sending message [ogS:0|mId:6|mt:3|mt:TRANSACTION|mr:4|ogR:3]
+20:41:49 - Got message [ogS:2|mId:16|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+20:41:49 - Rebroadcasting... 88
+20:41:49 - Got message [ogS:2|mId:18|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+20:41:49 - Rebroadcasting... 89
+20:41:49 - Got message [ogS:2|mId:11|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+20:41:49 - Rebroadcasting... 90
+20:41:49 - Sending message [ogS:2|mId:21|mt:4|mt:TRANSACTION|mr:4|ogR:4]
+20:41:49 - Sending message [ogS:0|mId:12|mt:1|mt:TRANSACTION|mr:4|ogR:3]
+20:41:49 - Got message [ogS:2|mId:3|mt:1|mt:TRANSACTION|mr:3|ogR:1]
+20:41:49 - Rebroadcasting... 91
+20:41:49 - Sending message [ogS:0|mId:4|mt:5|mt:TRANSACTION|mr:4|ogR:2]
+20:41:49 - Sending message [ogS:1|mId:21|mt:5|mt:TRANSACTION|mr:4|ogR:4]
+20:41:49 - Got message [ogS:2|mId:5|mt:4|mt:TRANSACTION|mr:3|ogR:4]
+20:41:49 - Rebroadcasting... 92
+20:41:49 - Got message [ogS:2|mId:9|mt:3|mt:TRANSACTION|mr:3|ogR:4]
+20:41:49 - Rebroadcasting... 93
+20:41:49 - Sending message [ogS:2|mId:10|mt:4|mt:TRANSACTION|mr:4|ogR:0]
+20:41:49 - Got message [ogS:2|mId:24|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+20:41:49 - Rebroadcasting... 94
+20:41:49 - Sending message [ogS:0|mId:22|mt:2|mt:TRANSACTION|mr:4|ogR:3]
+20:41:49 - Got message [ogS:2|mId:4|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+20:41:49 - Rebroadcasting... 95
+20:41:49 - Got message [ogS:2|mId:12|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+20:41:49 - Rebroadcasting... 96
+20:41:49 - Sending message [ogS:0|mId:13|mt:3|mt:TRANSACTION|mr:4|ogR:1]
+20:41:49 - Sending message [ogS:0|mId:11|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:49 - Sending message [ogS:2|mId:8|mt:1|mt:TRANSACTION|mr:4|ogR:0]
+20:41:49 - Sending message [ogS:0|mId:19|mt:4|mt:TRANSACTION|mr:4|ogR:2]
+20:41:49 - Sending message [ogS:0|mId:17|mt:1|mt:TRANSACTION|mr:4|ogR:2]
+20:41:49 - Got message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:3|ogR:1]
+20:41:49 - Committing [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:3|mt:1|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:4|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:5|mt:4|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:6|mt:3|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:49 - Rebroadcasting... 97
+20:41:49 - Sending message [ogS:0|mId:2|mt:4|mt:TRANSACTION|mr:4|ogR:3]
+20:41:49 - Sending message [ogS:2|mId:19|mt:1|mt:TRANSACTION|mr:4|ogR:1]
+20:41:49 - Got message [ogS:2|mId:7|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+20:41:49 - Committing [ogS:2|mId:7|mt:1|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:8|mt:1|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:9|mt:3|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:10|mt:4|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:11|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:12|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:13|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:14|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:49 - Rebroadcasting... 98
+20:41:49 - Sending message [ogS:0|mId:15|mt:3|mt:TRANSACTION|mr:4|ogR:4]
+20:41:49 - Sending message [ogS:2|mId:20|mt:3|mt:TRANSACTION|mr:4|ogR:1]
+20:41:49 - Sending message [ogS:0|mId:3|mt:2|mt:TRANSACTION|mr:4|ogR:3]
+20:41:49 - Sending message [ogS:2|mId:17|mt:5|mt:TRANSACTION|mr:4|ogR:0]
+20:41:49 - Sending message [ogS:2|mId:22|mt:3|mt:TRANSACTION|mr:4|ogR:0]
+20:41:49 - Got message [ogS:2|mId:15|mt:2|mt:TRANSACTION|mr:3|ogR:0]
+20:41:49 - Committing [ogS:2|mId:15|mt:2|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:16|mt:5|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:17|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:18|mt:2|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:19|mt:1|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:20|mt:3|mt:TRANSACTION|mr:3|ogR:1]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:21|mt:4|mt:TRANSACTION|mr:3|ogR:4]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:22|mt:3|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:49 - Rebroadcasting... 99
+20:41:49 - Sending message [ogS:2|mId:4|mt:1|mt:TRANSACTION|mr:4|ogR:3]
+20:41:49 - Sending message [ogS:2|mId:1|mt:5|mt:TRANSACTION|mr:4|ogR:0]
+20:41:49 - Got message [ogS:2|mId:23|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+20:41:49 - Committing [ogS:2|mId:23|mt:4|mt:TRANSACTION|mr:3|ogR:3]
+PRESWITCH TRANSACTION
+20:41:49 - Committing [ogS:2|mId:24|mt:5|mt:TRANSACTION|mr:3|ogR:0]
+PRESWITCH TRANSACTION
+20:41:49 - Rebroadcasting... 100
+20:41:49 - Sending message [ogS:0|mId:18|mt:3|mt:TRANSACTION|mr:4|ogR:2]
+20:41:49 - Sending message [ogS:2|mId:12|mt:5|mt:TRANSACTION|mr:4|ogR:3]
+20:41:49 - Sending message [ogS:2|mId:13|mt:4|mt:TRANSACTION|mr:4|ogR:3]
+20:41:50 - Sending message [ogS:2|mId:18|mt:2|mt:TRANSACTION|mr:4|ogR:3]
+20:41:50 - Sending message [ogS:2|mId:14|mt:4|mt:TRANSACTION|mr:4|ogR:3]
+20:41:50 - Sending message [ogS:2|mId:24|mt:5|mt:TRANSACTION|mr:4|ogR:0]
+20:41:50 - Sending message [ogS:2|mId:9|mt:3|mt:TRANSACTION|mr:4|ogR:4]
+20:41:50 - Sending message [ogS:2|mId:16|mt:5|mt:TRANSACTION|mr:4|ogR:3]
+20:41:50 - Sending message [ogS:2|mId:11|mt:3|mt:TRANSACTION|mr:4|ogR:1]
+20:41:50 - Sending message [ogS:2|mId:5|mt:4|mt:TRANSACTION|mr:4|ogR:4]
+20:41:50 - Sending message [ogS:2|mId:7|mt:1|mt:TRANSACTION|mr:4|ogR:3]
+20:41:50 - Sending message [ogS:2|mId:15|mt:2|mt:TRANSACTION|mr:4|ogR:0]
+20:41:50 - Sending message [ogS:2|mId:3|mt:1|mt:TRANSACTION|mr:4|ogR:1]
+20:41:50 - Sending message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:4|ogR:1]
+20:41:51 - Got message [ogS:4|mId:25|mt:|mt:AV_ASK|mr:3|ogR:null]
+20:41:51 - Committing [ogS:4|mId:25|mt:|mt:AV_ASK|mr:3|ogR:null]
+PRESWITCH AV_ASK
+### SHARED PRIMIO ASK
+20:41:51 - Rebroadcasting... 101
+### USAO U TOKEN HANDLER
+INITIATOR ID
+4
+DONE SALJEMO n:4 dm:[ogS:3|mId:0|mt:|mt:AV_DONE|mr:4|ogR:null]
+20:41:51 - Committing # [ogS:3|mId:0|mt:|mt:AV_DONE|mr:4|ogR:null]
+20:41:51 - Sending message [ogS:2|mId:23|mt:4|mt:TRANSACTION|mr:4|ogR:3]
+20:41:51 - Sending message [ogS:3|mId:0|mt:|mt:AV_DONE|mr:4|ogR:null]
+20:41:52 - Sending message [ogS:4|mId:25|mt:|mt:AV_ASK|mr:4|ogR:null]
+20:42:15 - CLOCK: {0=25, 1=25, 2=25, 3=1, 4=26}
+20:42:15 - BITCAKES: 1098
+20:42:15 - Stopping...
