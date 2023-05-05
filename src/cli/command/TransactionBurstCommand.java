@@ -48,8 +48,7 @@ public class TransactionBurstCommand implements CLICommand {
                     System.out.println("PRE CAKE MANAGER PROVERE");
                     if (snapshotCollector.getBitcakeManager() instanceof AbBitCakeManager) {
                         CausalBroadcastShared.addSentTransaction(transactionMessage);
-                    }
-                    else if (snapshotCollector.getBitcakeManager() instanceof AvBitCakeManager) {//todo 1 proveri av burst command
+                    } else if (snapshotCollector.getBitcakeManager() instanceof AvBitCakeManager) {
                         System.out.println("UNUTAR PROVERE");
                         System.out.println("snimamo give - " + amount);
                         CausalBroadcastShared.recordGiveTransaction(transactionMessage.getSenderVectorClock(), receiverInfo.getId(), amount);

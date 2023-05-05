@@ -1,9 +1,9 @@
 package servent.message.av;
 
-import app.CausalBroadcastShared;
 import app.ServentInfo;
 import servent.message.BasicMessage;
 import servent.message.MessageType;
+
 import java.io.Serial;
 import java.util.Map;
 
@@ -19,7 +19,6 @@ public class AvDoneMessage extends BasicMessage {
 //        System.out.println(this.initiatorId);
 //        System.out.println(this.hashCode());
     }
-
 
 
     public int getInitiatorId() {

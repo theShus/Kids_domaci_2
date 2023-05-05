@@ -1,14 +1,10 @@
 package servent.message.av;
 
-import app.AppConfig;
 import app.ServentInfo;
-import app.snapshot_bitcake.SnapshotCollector;
 import servent.message.BasicMessage;
-import servent.message.Message;
 import servent.message.MessageType;
 
 import java.io.Serial;
-import java.util.List;
 import java.util.Map;
 
 public class AvTerminateMessage extends BasicMessage {

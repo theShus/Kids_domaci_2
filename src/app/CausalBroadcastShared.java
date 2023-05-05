@@ -9,7 +9,6 @@ import servent.handler.av.AvDoneHandler;
 import servent.handler.av.AvTerminateHandler;
 import servent.message.BasicMessage;
 import servent.message.Message;
-import servent.message.av.AvDoneMessage;
 
 import java.util.*;
 import java.util.concurrent.*;
@@ -56,12 +55,11 @@ public class CausalBroadcastShared {
     }
 
 
-    //todo 2 proveri da li su ovi dobri za zapiseivanje burst commanda
     public static void recordGetTransaction(Map<Integer, Integer> senderVectorClock, int neighbor, int amount) {
         if (tokenVectorClock != null) {
-            if (senderVectorClock.get(initiatorId) <= tokenVectorClock.get(initiatorId)){
+            if (senderVectorClock.get(initiatorId) <= tokenVectorClock.get(initiatorId)) {
                 int oldAmount;
-                if(getChannel.get(neighbor) == null) oldAmount = 0;
+                if (getChannel.get(neighbor) == null) oldAmount = 0;
                 else oldAmount = getChannel.get(neighbor);
                 getChannel.put(neighbor, oldAmount + amount);
             }
@@ -70,9 +68,9 @@ public class CausalBroadcastShared {
 
     public static void recordGiveTransaction(Map<Integer, Integer> senderVectorClock, int neighbor, int amount) {
         if (tokenVectorClock != null) {
-            if (senderVectorClock.get(initiatorId) <= tokenVectorClock.get(initiatorId)){
+            if (senderVectorClock.get(initiatorId) <= tokenVectorClock.get(initiatorId)) {
                 int oldAmount;
-                if(getChannel.get(neighbor) == null) oldAmount = 0;
+                if (getChannel.get(neighbor) == null) oldAmount = 0;
                 else oldAmount = getChannel.get(neighbor);
                 getChannel.put(neighbor, oldAmount + amount);
             }
@@ -109,24 +107,25 @@ public class CausalBroadcastShared {
                             }
                             case AB_ASK -> {
                                 didPut = receivedAbAsk.add(basicMessage);
-                                if (didPut) committedMessagesThreadPool.submit(new AbAskTokenHandler(basicMessage, snapshotCollector));
+                                if (didPut)
+                                    committedMessagesThreadPool.submit(new AbAskTokenHandler(basicMessage, snapshotCollector));
                             }
                             case AB_TELL -> {
                                 if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
                                     committedMessagesThreadPool.submit(new AbTellHandler(basicMessage, snapshotCollector));
                             }
-                            case AV_ASK -> {//todo av ask
+                            case AV_ASK -> {
 //                                if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
-                                    committedMessagesThreadPool.submit(new AvAskTokenHandler(basicMessage, snapshotCollector.getBitcakeManager().getCurrentBitcakeAmount(), snapshotCollector));
+                                committedMessagesThreadPool.submit(new AvAskTokenHandler(basicMessage, snapshotCollector.getBitcakeManager().getCurrentBitcakeAmount(), snapshotCollector));
                             }
-                            case AV_DONE -> {//todo av tell
+                            case AV_DONE -> {
                                 if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId()) {
                                     committedMessagesThreadPool.submit(new AvDoneHandler(basicMessage, snapshotCollector));
                                 }
                             }
-                            case AV_TERMINATE -> {//todo av tell
+                            case AV_TERMINATE -> {
 //                                if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
-                                    committedMessagesThreadPool.submit(new AvTerminateHandler(basicMessage, snapshotCollector));
+                                committedMessagesThreadPool.submit(new AvTerminateHandler(basicMessage, snapshotCollector));
                             }
                         }
 

@@ -33,8 +33,7 @@ public class AbTellHandler implements MessageHandler {
                         tellAmountMessage.getReceivedTransactions());
 
                 snapshotCollector.getCollectedAbValues().put("node " + clientMessage.getOriginalSenderInfo().getId(), abSnapshotResult);
-            }
-            else {
+            } else {
                 AppConfig.timestampedErrorPrint("Tell amount handler got: " + clientMessage);
             }
         } catch (Exception e) {

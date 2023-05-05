@@ -105,7 +105,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
                     CausalBroadcastShared.causalClockIncrement(askMessage);
                 }
-                //todo 3 proveri av send ask (token) msg
                 case AV -> {
                     vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
                     CausalBroadcastShared.initiatorId = AppConfig.myServentInfo.getId();
@@ -205,7 +204,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                     collectedAbValues.clear();
                 }
                 case AV -> {
-                    while (test){
+                    while (test) {
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {

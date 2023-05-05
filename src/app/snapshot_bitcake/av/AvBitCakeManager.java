@@ -2,7 +2,6 @@ package app.snapshot_bitcake.av;
 
 import app.snapshot_bitcake.BitcakeManager;
 
-import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class AvBitCakeManager implements BitcakeManager {

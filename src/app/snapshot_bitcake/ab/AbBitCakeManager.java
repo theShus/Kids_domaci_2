@@ -1,6 +1,7 @@
 package app.snapshot_bitcake.ab;
 
 import app.snapshot_bitcake.BitcakeManager;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class AbBitCakeManager implements BitcakeManager {

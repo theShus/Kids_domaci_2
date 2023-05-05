@@ -2,18 +2,11 @@ package servent.handler.av;
 
 import app.AppConfig;
 import app.CausalBroadcastShared;
-import app.ServentInfo;
 import app.snapshot_bitcake.SnapshotCollector;
 import servent.handler.MessageHandler;
-import servent.message.BasicMessage;
 import servent.message.Message;
-import servent.message.MessageType;
 import servent.message.av.AvDoneMessage;
 import servent.message.util.MessageUtil;
-
-import java.io.Serial;
-import java.sql.SQLOutput;
-import java.util.Map;
 
 public class AvAskTokenHandler implements MessageHandler {
 
@@ -38,7 +31,7 @@ public class AvAskTokenHandler implements MessageHandler {
         CausalBroadcastShared.tokenVectorClock = clientMessage.getSenderVectorClock();
         CausalBroadcastShared.recordedAmount = currentBitcakeAmount;
         CausalBroadcastShared.initiatorId = clientMessage.getReceiverInfo().getId();
-        Message doneMessage = new AvDoneMessage(AppConfig.myServentInfo,  clientMessage.getOriginalSenderInfo(), null, clientMessage.getSenderVectorClock(), clientMessage.getOriginalSenderInfo().getId());
+        Message doneMessage = new AvDoneMessage(AppConfig.myServentInfo, clientMessage.getOriginalSenderInfo(), null, clientMessage.getSenderVectorClock(), clientMessage.getOriginalSenderInfo().getId());
 
         for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
             doneMessage = doneMessage.changeReceiver(neighbor);
