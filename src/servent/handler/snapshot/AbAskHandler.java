@@ -2,7 +2,6 @@ package servent.handler.snapshot;
 
 import app.AppConfig;
 import app.CausalBroadcastShared;
-import app.snapshot_bitcake.BitcakeManager;
 import app.snapshot_bitcake.SnapshotCollector;
 import servent.handler.MessageHandler;
 import servent.message.Message;
@@ -41,8 +40,7 @@ public class AbAskHandler implements MessageHandler {
                 //Same message, different receiver, and add us to the route table.
                 MessageUtil.sendMessage(tellMessage.changeReceiver(neighbor).makeMeASender());
             }
-        }
-        else {
+        } else {
             AppConfig.timestampedErrorPrint("Ask amount handler got: " + clientMessage);
         }
     }

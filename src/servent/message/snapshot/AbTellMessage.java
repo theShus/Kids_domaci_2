@@ -53,8 +53,8 @@ public class AbTellMessage extends BasicMessage {
         List<ServentInfo> newRouteList = new ArrayList<>(getRoute());
         newRouteList.add(newRouteItem);
 
-        return new AbTellMessage(getMessageType(), getOriginalSenderInfo(), getOriginalReceiverInfo(),getReceiverInfo(),
-                getSenderVectorClock(),newRouteList, getMessageText(), getMessageId(), getSentTransactions(), getReceivedTransactions());
+        return new AbTellMessage(getMessageType(), getOriginalSenderInfo(), getOriginalReceiverInfo(), getReceiverInfo(),
+                getSenderVectorClock(), newRouteList, getMessageText(), getMessageId(), getSentTransactions(), getReceivedTransactions());
     }
 
     @Override
@@ -64,8 +64,7 @@ public class AbTellMessage extends BasicMessage {
 
             return new AbTellMessage(getMessageType(), getOriginalSenderInfo(), getOriginalReceiverInfo(), newReceiverInfo,
                     getSenderVectorClock(), getRoute(), getMessageText(), getMessageId(), getSentTransactions(), getReceivedTransactions());
-        }
-        else {
+        } else {
             AppConfig.timestampedErrorPrint("Trying to make a message for " + newReceiverId + " who is not a neighbor.");
             return null;
         }

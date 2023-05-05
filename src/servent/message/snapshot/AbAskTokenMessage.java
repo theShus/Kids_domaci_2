@@ -5,7 +5,6 @@ import servent.message.BasicMessage;
 import servent.message.MessageType;
 
 import java.io.Serial;
-import java.util.List;
 import java.util.Map;
 
 public class AbAskTokenMessage extends BasicMessage {

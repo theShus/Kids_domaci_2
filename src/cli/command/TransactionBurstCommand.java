@@ -47,8 +47,7 @@ public class TransactionBurstCommand implements CLICommand {
                     if (snapshotCollector.getBitcakeManager() instanceof AbBitCakeManager) {
 //                        CausalBroadcastShared.addSendTransaction(transactionMessage);
                         //todo saljemo za ab bitcake manager
-                    }
-                    else if (snapshotCollector.getBitcakeManager() instanceof AvBitCakeManager) {
+                    } else if (snapshotCollector.getBitcakeManager() instanceof AvBitCakeManager) {
                         //todo saljemo za av bitcake manager
                     }
 

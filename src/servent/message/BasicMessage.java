@@ -173,8 +173,8 @@ public class BasicMessage implements Message {
     public boolean equals(Object obj) {
         if (obj instanceof BasicMessage other) {
 
-			return getMessageId() == other.getMessageId() &&
-					getOriginalSenderInfo().getId() == other.getOriginalSenderInfo().getId();
+            return getMessageId() == other.getMessageId() &&
+                    getOriginalSenderInfo().getId() == other.getOriginalSenderInfo().getId();
         }
 
         return false;
@@ -195,7 +195,7 @@ public class BasicMessage implements Message {
     @Override
     public String toString() {
         return "[ogS:" + getOriginalSenderInfo().getId() + "|mId:" + getMessageId() + "|mt:" + getMessageText() +
-                "|mt:" + getMessageType() + "|mr:" /*+ getReceiverInfo().getId() */+ "|ogR:" + (getOriginalReceiverInfo() != null ? getOriginalReceiverInfo().getId() : null) + "]";
+                "|mt:" + getMessageType() + "|mr:" /*+ getReceiverInfo().getId() */ + "|ogR:" + (getOriginalReceiverInfo() != null ? getOriginalReceiverInfo().getId() : null) + "]";
     }
 
 

@@ -33,8 +33,7 @@ public class TransactionHandler implements MessageHandler {
             if (bitcakeManager instanceof AbBitCakeManager) {
                 CausalBroadcastShared.addReceivedTransaction(clientMessage);
             }
-        }
-        else {
+        } else {
             AppConfig.timestampedErrorPrint("Transaction handler got: " + clientMessage);
         }
     }

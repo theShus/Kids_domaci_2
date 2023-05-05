@@ -1,7 +1,6 @@
 package servent.handler.snapshot;
 
 import app.AppConfig;
-import app.CausalBroadcastShared;
 import app.snapshot_bitcake.SnapshotCollector;
 import app.snapshot_bitcake.ab.AbSnapshotResult;
 import servent.handler.MessageHandler;

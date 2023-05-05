@@ -101,7 +101,8 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
                     CausalBroadcastShared.commitCausalMessage(askMessage);//TODO promeni ovo govno
                 }
-                case AV -> {} //todo av ask message
+                case AV -> {
+                } //todo av ask message
 
                 case NONE -> System.out.println("Error snapshot type is null");
             }
@@ -116,7 +117,8 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                             waiting = false;
                         }
                     }
-                    case AV -> {} //todo AV snapshot collector
+                    case AV -> {
+                    } //todo AV snapshot collector
                     case NONE -> System.out.println("Error snapshot type is null");
                     //Shouldn't be able to come here. See constructor.
                 }
@@ -164,7 +166,8 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                     AppConfig.timestampedStandardPrint("System bitcake count: " + sum);
                     collectedAbValues.clear();
                 }
-                case AV -> {}//todo print av
+                case AV -> {
+                }//todo print av
                 case NONE -> System.out.println("Error snapshot type is null");
                 //Shouldn't be able to come here. See constructor.
             }

@@ -6,7 +6,7 @@ import servent.handler.snapshot.AbAskHandler;
 import servent.handler.snapshot.AbTellHandler;
 import servent.message.BasicMessage;
 import servent.message.Message;
-import servent.message.MessageType;
+
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.function.BiFunction;
@@ -121,22 +121,25 @@ public class CausalBroadcastShared {
 
                         boolean didPut;
 
-                        switch (basicMessage.getMessageType()){
+                        switch (basicMessage.getMessageType()) {
                             case TRANSACTION -> {
                                 if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
                                     committedMessagesThreadPool.submit(new TransactionHandler(basicMessage, snapshotCollector.getBitcakeManager()));
                             }
                             case AB_ASK -> {//todo check
                                 didPut = receivedAbAsk.add(basicMessage);
-                                if (didPut) committedMessagesThreadPool.submit(new AbAskHandler(basicMessage, snapshotCollector));
+                                if (didPut)
+                                    committedMessagesThreadPool.submit(new AbAskHandler(basicMessage, snapshotCollector));
                             }
                             case AB_TELL -> {//todo check
                                 if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
                                     committedMessagesThreadPool.submit(new AbTellHandler(basicMessage, snapshotCollector));
 
                             }
-                            case AV_ASK -> {}//todo av ask
-                            case AV_TELL -> {}//todo av tell
+                            case AV_ASK -> {
+                            }//todo av ask
+                            case AV_TELL -> {
+                            }//todo av tell
                         }
 
                         iterator.remove();
