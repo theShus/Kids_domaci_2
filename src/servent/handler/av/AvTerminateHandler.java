@@ -20,7 +20,7 @@ public class AvTerminateHandler implements MessageHandler {
 
     @Override
     public void run() {
-        System.out.println("### USAO U TERMINATE HANDLER");
+        System.out.println("\n----------TERMINATE PRINT----------");
         CausalBroadcastShared.tokenVectorClock = null;
 
         int sum = CausalBroadcastShared.recordedAmount;
@@ -36,7 +36,9 @@ public class AvTerminateHandler implements MessageHandler {
             sum -= entry.getValue();
         }
 
-        AppConfig.timestampedStandardPrint("Total node bitcake amount: " + sum + "\n");
+        AppConfig.timestampedStandardPrint("Total node bitcake amount: " + sum);
+
+        System.out.println("----------TERMINATE PRINT----------\n");
 
         snapshotCollector.clearCollectedDoneValues();
     }

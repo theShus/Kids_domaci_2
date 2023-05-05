@@ -36,7 +36,8 @@ public class TransactionHandler implements MessageHandler {
                 CausalBroadcastShared.addReceivedTransaction(clientMessage);
             }
             else if (bitcakeManager instanceof AvBitCakeManager){
-                //todo odradi AV transactino snimanje
+                CausalBroadcastShared.recordGetTransaction(clientMessage.getSenderVectorClock(), clientMessage.getOriginalSenderInfo().getId(), amountNumber);
+
             }
 
         }

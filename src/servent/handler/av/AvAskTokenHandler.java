@@ -29,7 +29,6 @@ public class AvAskTokenHandler implements MessageHandler {
 
     @Override
     public void run() {
-        System.out.println("### USAO U TOKEN HANDLER");
 
         for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
             CausalBroadcastShared.getChannel.put(neighbor, 0);
@@ -39,11 +38,10 @@ public class AvAskTokenHandler implements MessageHandler {
         CausalBroadcastShared.tokenVectorClock = clientMessage.getSenderVectorClock();
         CausalBroadcastShared.recordedAmount = currentBitcakeAmount;
         CausalBroadcastShared.initiatorId = clientMessage.getReceiverInfo().getId();
-        Message doneMessage = new AvDoneMessage(AppConfig.myServentInfo, null, null, clientMessage.getSenderVectorClock(), clientMessage.getOriginalSenderInfo().getId());
+        Message doneMessage = new AvDoneMessage(AppConfig.myServentInfo,  clientMessage.getOriginalSenderInfo(), null, clientMessage.getSenderVectorClock(), clientMessage.getOriginalSenderInfo().getId());
 
         for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
             doneMessage = doneMessage.changeReceiver(neighbor);
-            System.out.println("DONE SALJEMO n:" + neighbor + " dm:" + doneMessage);
             MessageUtil.sendMessage(doneMessage);
         }
 //        CausalBroadcastShared.incrementClock(AppConfig.myServentInfo.getId());
