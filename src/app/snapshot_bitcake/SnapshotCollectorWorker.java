@@ -58,8 +58,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
     @Override
     public void run() {
         while (working) {
-            System.out.println("### AKTIVIRAO SE COLLECTOR");
-
             /*
              * Not collecting yet - just sleep until we start actual work, or finish
              */
@@ -83,7 +81,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
              */
             Map<Integer, Integer> vectorClock;
             Message askMessage;
-            System.out.println("### pre izbora kurca");
 
             switch (snapshotType) {
 
@@ -110,7 +107,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                 }
                 //todo 3 proveri av send ask (token) msg
                 case AV -> {
-                    System.out.println("### USLI SMO U AV SENT TOKEN");
                     vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
                     CausalBroadcastShared.initiatorId = AppConfig.myServentInfo.getId();
 
@@ -125,8 +121,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
                     for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
                         askMessage = askMessage.changeReceiver(neighbor);
-                        System.out.println("neighbor = " + neighbor);
-                        System.out.println("poslali smo PORUKU " + askMessage);
                         MessageUtil.sendMessage(askMessage);
                     }
                     CausalBroadcastShared.causalClockIncrement(askMessage);
@@ -146,7 +140,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                         }
                     }
                     case AV -> {
-                        System.out.println("### WAIT - collectedDoneMessages.size: " + collectedDoneMessages.size());
                         if (collectedDoneMessages.size() + 1 == AppConfig.getServentCount()) {
                             waiting = false;
 
@@ -159,7 +152,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                             }
                             CausalBroadcastShared.addPendingMessage(terminateMessage);
                             CausalBroadcastShared.checkPendingMessages();
-                            System.out.println("### ZAVRSILI SMO AV WAIT");
 
                         }
                     }
@@ -213,9 +205,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                     collectedAbValues.clear();
                 }
                 case AV -> {
-                    System.out.println("KURCINA");
                     while (test){
-                        System.out.println("I TO DEBELA");
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {
@@ -233,11 +223,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
     @Override
     public void startCollecting() {
-        System.out.println("### KURACC " + collecting);
-
         boolean oldValue = this.collecting.getAndSet(true);
-
-        System.out.println("### KURACC " + collecting);
 
         if (oldValue) {
             AppConfig.timestampedErrorPrint("Tried to start collecting before finished with previous.");

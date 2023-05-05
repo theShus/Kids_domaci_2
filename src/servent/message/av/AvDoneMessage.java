@@ -18,8 +18,6 @@ public class AvDoneMessage extends BasicMessage {
         this.initiatorId = initiatorId;
 //        System.out.println(this.initiatorId);
 //        System.out.println(this.hashCode());
-        CausalBroadcastShared.giveMsg_Initiator.put(this.hashCode(), this.initiatorId);
-
     }
 
 

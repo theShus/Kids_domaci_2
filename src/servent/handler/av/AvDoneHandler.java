@@ -18,12 +18,8 @@ public class AvDoneHandler implements MessageHandler {
 
     @Override
     public void run() {
-        System.out.println("### USAO U DONE HANDLER");
-
         if (clientMessage.getMessageType() == MessageType.AV_DONE) {
             snapshotCollector.addDoneMessage(clientMessage.getReceiverInfo().getId());
-            System.out.println("dodao je na listu done poruka ovog " + clientMessage.getReceiverInfo().getId());
-
         } else {
             AppConfig.timestampedErrorPrint("Tell amount handler got: " + clientMessage);
         }

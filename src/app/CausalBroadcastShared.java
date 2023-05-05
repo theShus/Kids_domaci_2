@@ -35,8 +35,6 @@ public class CausalBroadcastShared {
     public static final Map<Integer, Integer> getChannel = new ConcurrentHashMap<>();
     public static final Map<Integer, Integer> giveChannel = new ConcurrentHashMap<>();
 
-    public static final Map<Integer, Integer> giveMsg_Initiator = new HashMap<>();
-
     private static boolean otherClockGreater(Map<Integer, Integer> clock1, Map<Integer, Integer> clock2) {
         if (clock1.size() != clock2.size()) {
             throw new IllegalArgumentException("Clocks are not same size how why");
@@ -60,55 +58,23 @@ public class CausalBroadcastShared {
 
     //todo 2 proveri da li su ovi dobri za zapiseivanje burst commanda
     public static void recordGetTransaction(Map<Integer, Integer> senderVectorClock, int neighbor, int amount) {
-        System.out.println("PRE TOKEN get == NULL");
         if (tokenVectorClock != null) {
-            System.out.println("SNIMAMO GET");
-            System.out.println(senderVectorClock.get(initiatorId) + " == " + tokenVectorClock.get(initiatorId));
-            System.out.println(senderVectorClock.get(initiatorId) <= tokenVectorClock.get(initiatorId));
-
             if (senderVectorClock.get(initiatorId) <= tokenVectorClock.get(initiatorId)){
                 int oldAmount;
                 if(getChannel.get(neighbor) == null) oldAmount = 0;
                 else oldAmount = getChannel.get(neighbor);
-
-                System.out.println("stavili smo " + amount);
-                System.out.println("bilo pre " + oldAmount);
-                System.out.println("sad treba da ima " + oldAmount + amount);
-
                 getChannel.put(neighbor, oldAmount + amount);
-
-                System.out.println(getChannel.size());
-                System.out.println("sad ima " + getChannel.get(neighbor));
-
-//                getChannel.compute(neighbor, new AvBitCakeManager().MapValueUpdater(amount));
             }
         }
     }
 
     public static void recordGiveTransaction(Map<Integer, Integer> senderVectorClock, int neighbor, int amount) {
-        System.out.println("PRE TOKEN give == NULL");
         if (tokenVectorClock != null) {
-
-            System.out.println("SNIMAMO GIVE");
-            System.out.println(senderVectorClock.get(initiatorId) + " == " + tokenVectorClock.get(initiatorId));
-            System.out.println(senderVectorClock.get(initiatorId) <= tokenVectorClock.get(initiatorId));
-
             if (senderVectorClock.get(initiatorId) <= tokenVectorClock.get(initiatorId)){
                 int oldAmount;
                 if(getChannel.get(neighbor) == null) oldAmount = 0;
                 else oldAmount = getChannel.get(neighbor);
-
-                System.out.println("stavili smo " + amount);
-                System.out.println("bilo pre " + oldAmount);
-                System.out.println("sad treba da ima " + oldAmount + amount);
-
                 getChannel.put(neighbor, oldAmount + amount);
-
-                System.out.println(getChannel.size());
-                System.out.println("sad ima " + getChannel.get(neighbor));
-//                System.out.println("stavili smo " + amount);
-//                giveChannel.put(neighbor, giveChannel.get(neighbor) + amount);
-//                giveChannel.compute(neighbor, new AlagarVenkatesanBitcakeManager.MapValueUpdater(amount));
             }
         }
     }

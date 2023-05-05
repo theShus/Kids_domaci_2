@@ -44,10 +44,14 @@ public class TransactionBurstCommand implements CLICommand {
                     Map<Integer, Integer> vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
                     transactionMessage = new TransactionMessage(AppConfig.myServentInfo, receiverInfo, null, vectorClock, amount, snapshotCollector.getBitcakeManager());
 
+
+                    System.out.println("PRE CAKE MANAGER PROVERE");
                     if (snapshotCollector.getBitcakeManager() instanceof AbBitCakeManager) {
                         CausalBroadcastShared.addSentTransaction(transactionMessage);
                     }
                     else if (snapshotCollector.getBitcakeManager() instanceof AvBitCakeManager) {//todo 1 proveri av burst command
+                        System.out.println("UNUTAR PROVERE");
+                        System.out.println("snimamo give - " + amount);
                         CausalBroadcastShared.recordGiveTransaction(transactionMessage.getSenderVectorClock(), receiverInfo.getId(), amount);
                     }
 
