@@ -3,7 +3,7 @@ package app.snapshot_bitcake.av;
 import java.io.Serializable;
 import java.util.Map;
 
-public class AvSnapshotResult implements Serializable {//todo proveri
+public class AvSnapshotResult implements Serializable {
 
     private final int serventId;
     private final int recordedAmount;

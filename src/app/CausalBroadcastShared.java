@@ -19,7 +19,7 @@ public class CausalBroadcastShared {
     private static final ExecutorService committedMessagesThreadPool = Executors.newWorkStealingPool();
     private static SnapshotCollector snapshotCollector;
 
-    private static final List<Message> sendTransactions = new CopyOnWriteArrayList<>();
+    private static final List<Message> sentTransactions = new CopyOnWriteArrayList<>();
     private static final List<Message> receivedTransactions = new CopyOnWriteArrayList<>();
     private static final Set<Message> receivedAbAsk = Collections.newSetFromMap(new ConcurrentHashMap<>());
 
@@ -31,8 +31,6 @@ public class CausalBroadcastShared {
     }
 
     public static void incrementClock(int serventId) {
-//        vectorClock.computeIfPresent(serventId, (key, oldValue) -> oldValue+1);
-
         vectorClock.computeIfPresent(serventId, new BiFunction<Integer, Integer, Integer>() {
 
             @Override
@@ -72,7 +70,6 @@ public class CausalBroadcastShared {
         return false;
     }
 
-
     public static void addReceivedTransaction(Message receivedTransaction) {
         receivedTransactions.add(receivedTransaction);
     }
@@ -81,20 +78,18 @@ public class CausalBroadcastShared {
         return receivedTransactions;
     }
 
-    public static void addSendTransaction(Message sendTransaction) {
-        sendTransactions.add(sendTransaction);
+    public static void addSentTransaction(Message sendTransaction) {
+        sentTransactions.add(sendTransaction);
     }
 
-    public static List<Message> getSendTransactions() {
-        return sendTransactions;
+    public static List<Message> getSentTransactions() {
+        return sentTransactions;
     }
 
 
-    public static void commitCausalMessage(Message newMessage) {
-        AppConfig.timestampedStandardPrint("-Committing- " + newMessage);
-//        commitedCausalMessageList.add(newMessage);
+    public static void causalClockIncrement(Message newMessage) {
+        AppConfig.timestampedStandardPrint("Committing # " + newMessage);
         incrementClock(newMessage.getOriginalSenderInfo().getId());
-
         checkPendingMessages();
     }
 
@@ -126,15 +121,13 @@ public class CausalBroadcastShared {
                                 if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
                                     committedMessagesThreadPool.submit(new TransactionHandler(basicMessage, snapshotCollector.getBitcakeManager()));
                             }
-                            case AB_ASK -> {//todo check
+                            case AB_ASK -> {
                                 didPut = receivedAbAsk.add(basicMessage);
-                                if (didPut)
-                                    committedMessagesThreadPool.submit(new AbAskHandler(basicMessage, snapshotCollector));
+                                if (didPut) committedMessagesThreadPool.submit(new AbAskHandler(basicMessage, snapshotCollector));
                             }
-                            case AB_TELL -> {//todo check
+                            case AB_TELL -> {
                                 if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId())
                                     committedMessagesThreadPool.submit(new AbTellHandler(basicMessage, snapshotCollector));
-
                             }
                             case AV_ASK -> {
                             }//todo av ask

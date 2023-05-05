@@ -45,15 +45,15 @@ public class TransactionBurstCommand implements CLICommand {
                     transactionMessage = new TransactionMessage(AppConfig.myServentInfo, receiverInfo, null, vectorClock, amount, snapshotCollector.getBitcakeManager());
 
                     if (snapshotCollector.getBitcakeManager() instanceof AbBitCakeManager) {
-//                        CausalBroadcastShared.addSendTransaction(transactionMessage);
-                        //todo saljemo za ab bitcake manager
-                    } else if (snapshotCollector.getBitcakeManager() instanceof AvBitCakeManager) {
-                        //todo saljemo za av bitcake manager
+                        CausalBroadcastShared.addSentTransaction(transactionMessage);
+                    }
+                    else if (snapshotCollector.getBitcakeManager() instanceof AvBitCakeManager) {
+                        //todo uradi zapisujemo za av
                     }
 
                     // reduce our bitcake count then send the message
                     transactionMessage.sendEffect();
-                    CausalBroadcastShared.commitCausalMessage(transactionMessage);//todo promeni ime ovoga kad saznas sta radi
+                    CausalBroadcastShared.causalClockIncrement(transactionMessage);
                 }
 
                 for (int neighbor : AppConfig.myServentInfo.getNeighbors()) {

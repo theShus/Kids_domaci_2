@@ -30,7 +30,6 @@ public class TransactionMessage extends BasicMessage {
     @Override
     public void sendEffect() {
         int amount = Integer.parseInt(getMessageText());
-
         bitcakeManager.takeSomeBitcakes(amount);
     }
 }

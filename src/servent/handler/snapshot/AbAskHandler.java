@@ -31,10 +31,10 @@ public class AbAskHandler implements MessageHandler {
             Message tellMessage = new AbTellMessage(
                     AppConfig.myServentInfo, clientMessage.getOriginalSenderInfo(),
                     null, vectorClock, currentAmount,
-                    CausalBroadcastShared.getSendTransactions(),
+                    CausalBroadcastShared.getSentTransactions(),
                     CausalBroadcastShared.getReceivedTransactions()
             );
-            CausalBroadcastShared.commitCausalMessage(tellMessage);
+            CausalBroadcastShared.causalClockIncrement(tellMessage);
 
             for (int neighbor : AppConfig.myServentInfo.getNeighbors()) {
                 //Same message, different receiver, and add us to the route table.

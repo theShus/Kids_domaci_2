@@ -60,7 +60,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
 
@@ -94,12 +93,10 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                     AbSnapshotResult abSnapshotResult = new AbSnapshotResult(
                             AppConfig.myServentInfo.getId(),
                             bitcakeManager.getCurrentBitcakeAmount(),
-                            CausalBroadcastShared.getSendTransactions(),
+                            CausalBroadcastShared.getSentTransactions(),
                             CausalBroadcastShared.getReceivedTransactions());
-//                    collectedAbValues.put("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);//todo vrati ovo
-                    test("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);
-
-                    CausalBroadcastShared.commitCausalMessage(askMessage);//TODO promeni ovo govno
+                    collectedAbValues.put("node " + AppConfig.myServentInfo.getId(), abSnapshotResult);
+                    CausalBroadcastShared.causalClockIncrement(askMessage);
                 }
                 case AV -> {
                 } //todo av ask message
@@ -143,6 +140,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                         sum += bitCakeAmount;
                         AppConfig.timestampedStandardPrint("Snapshot for " + abSR.getKey() + " = " + bitCakeAmount + " bitcake");
 
+                        //check za slucaj da nam neka transakcija promakla isto kao za lai_yang
                         for (Message sentTransaction : sentTransactions) {
                             AbSnapshotResult abSnapshotResult = collectedAbValues.get("node " + sentTransaction.getOriginalReceiverInfo().getId());
                             List<Message> receivedTransactions = abSnapshotResult.getReceivedTransactions();
@@ -163,6 +161,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
                             }
                         }
                     }
+
                     AppConfig.timestampedStandardPrint("System bitcake count: " + sum);
                     collectedAbValues.clear();
                 }
@@ -190,15 +189,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
         working = false;
     }
 
-    @Override
-    public boolean isCollecting() {
-        return collecting.get();
-    }
-
-    @Override
-    public void test(String key, AbSnapshotResult abSnapshotResult) {
-        collectedAbValues.put(key, abSnapshotResult);
-    }
 
     @Override
     public Map<String, AbSnapshotResult> getCollectedAbValues() {

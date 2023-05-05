@@ -30,7 +30,7 @@ public class TransactionHandler implements MessageHandler {
                 return;
             }
             bitcakeManager.addSomeBitcakes(amountNumber);
-            if (bitcakeManager instanceof AbBitCakeManager) {
+            if (bitcakeManager instanceof AbBitCakeManager) {//todo ovde ab transakcija
                 CausalBroadcastShared.addReceivedTransaction(clientMessage);
             }
         } else {

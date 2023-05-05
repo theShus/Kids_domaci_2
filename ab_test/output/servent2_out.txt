@@ -1,601 +1,601 @@
-14:58:08 - Starting servent [2|localhost|1302]
-14:58:08 - Pausing for 2000 ms
-14:58:09 - Got message [ogS:1|mId:20|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Rebroadcasting... 1
-14:58:09 - Got message [ogS:1|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:09 - Rebroadcasting... 2
-14:58:09 - Got message [ogS:0|mId:5|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:09 - Rebroadcasting... 3
-14:58:09 - Got message [ogS:0|mId:1|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:09 - Rebroadcasting... 4
-14:58:09 - Got message [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Rebroadcasting... 5
-14:58:09 - Got message [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:09 - Rebroadcasting... 6
-14:58:09 - Got message [ogS:1|mId:24|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Rebroadcasting... 7
-14:58:09 - Got message [ogS:1|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Rebroadcasting... 8
-14:58:09 - Got message [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:09 - Rebroadcasting... 9
-14:58:09 - Got message [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:09 - Already had this. No rebroadcast.
-14:58:09 - Got message [ogS:1|mId:13|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:09 - Rebroadcasting... 10
-14:58:09 - Got message [ogS:0|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Rebroadcasting... 11
-14:58:09 - Got message [ogS:0|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:09 - Rebroadcasting... 12
-14:58:09 - Got message [ogS:1|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Rebroadcasting... 13
-14:58:09 - Got message [ogS:1|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Rebroadcasting... 14
-14:58:09 - Got message [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Already had this. No rebroadcast.
-14:58:09 - Got message [ogS:1|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Already had this. No rebroadcast.
-14:58:09 - Got message [ogS:0|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:09 - Rebroadcasting... 15
-14:58:09 - Got message [ogS:0|mId:4|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Rebroadcasting... 16
-14:58:09 - Got message [ogS:1|mId:20|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Already had this. No rebroadcast.
-14:58:09 - Got message [ogS:1|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Already had this. No rebroadcast.
-14:58:09 - Got message [ogS:0|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:09 - Rebroadcasting... 17
-14:58:09 - Got message [ogS:0|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Rebroadcasting... 18
-14:58:09 - Got message [ogS:1|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Rebroadcasting... 19
-14:58:09 - Got message [ogS:0|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:09 - Rebroadcasting... 20
-14:58:09 - Got message [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Rebroadcasting... 21
-14:58:09 - Got message [ogS:1|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Rebroadcasting... 22
-14:58:09 - Got message [ogS:0|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:09 - Rebroadcasting... 23
-14:58:09 - Got message [ogS:1|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Rebroadcasting... 24
-14:58:09 - Got message [ogS:1|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Committing [ogS:1|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Got message [ogS:0|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:09 - Committing [ogS:0|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:09 - Committing [ogS:0|mId:1|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:09 - Rebroadcasting... 25
-14:58:09 - Rebroadcasting... 26
-14:58:10 - Got message [ogS:1|mId:9|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Rebroadcasting... 27
-14:58:10 - Sending message [ogS:1|mId:20|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Got message [ogS:0|mId:19|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Rebroadcasting... 28
-14:58:10 - Got message [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Rebroadcasting... 29
-14:58:10 - Got message [ogS:1|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:1|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:0|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Rebroadcasting... 30
-14:58:10 - Pausing for 28000 ms
-14:58:10 - -Committing- [ogS:2|mId:0|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - -Committing- [ogS:2|mId:1|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - -Committing- [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - -Committing- [ogS:2|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - -Committing- [ogS:2|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - -Committing- [ogS:2|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - -Committing- [ogS:2|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Got message [ogS:1|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - -Committing- [ogS:2|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Rebroadcasting... 31
-14:58:10 - -Committing- [ogS:2|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - -Committing- [ogS:2|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:11|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - -Committing- [ogS:2|mId:12|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - -Committing- [ogS:2|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - -Committing- [ogS:2|mId:19|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - -Committing- [ogS:2|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - -Committing- [ogS:2|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:23|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - -Committing- [ogS:2|mId:24|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Got message [ogS:1|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Rebroadcasting... 32
-14:58:10 - Got message [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Rebroadcasting... 33
-14:58:10 - Got message [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:0|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Rebroadcasting... 34
-14:58:10 - Got message [ogS:1|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:1|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Rebroadcasting... 35
-14:58:10 - Got message [ogS:1|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:0|mId:10|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Rebroadcasting... 36
-14:58:10 - Got message [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Rebroadcasting... 37
-14:58:10 - Sending message [ogS:0|mId:5|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Got message [ogS:1|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Rebroadcasting... 38
-14:58:10 - Got message [ogS:1|mId:13|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:1|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:1|mId:7|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Rebroadcasting... 39
-14:58:10 - Got message [ogS:0|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Rebroadcasting... 40
-14:58:10 - Got message [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:0|mId:1|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:0|mId:5|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Got message [ogS:1|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:0|mId:22|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Rebroadcasting... 41
-14:58:10 - Got message [ogS:0|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Rebroadcasting... 42
-14:58:10 - Sending message [ogS:0|mId:1|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Got message [ogS:1|mId:12|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Rebroadcasting... 43
-14:58:10 - Got message [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Got message [ogS:0|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Rebroadcasting... 44
-14:58:10 - Got message [ogS:0|mId:6|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Rebroadcasting... 45
-14:58:10 - Got message [ogS:1|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Rebroadcasting... 46
-14:58:10 - Got message [ogS:1|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:1|mId:1|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:1|mId:1|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:1|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:1|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Committing [ogS:1|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:1|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:1|mId:7|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:1|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:1|mId:9|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:1|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Got message [ogS:0|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Committing [ogS:1|mId:12|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:1|mId:13|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Committing [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:1|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:1|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Committing [ogS:1|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:1|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Committing [ogS:1|mId:20|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:1|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Committing [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Committing [ogS:1|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:1|mId:24|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Rebroadcasting... 47
-14:58:10 - Rebroadcasting... 48
-14:58:10 - Sending message [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:1|mId:24|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:1|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:1|mId:24|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Got message [ogS:0|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Rebroadcasting... 49
-14:58:10 - Sending message [ogS:0|mId:4|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:1|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Got message [ogS:0|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Committing [ogS:0|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Committing [ogS:0|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:0|mId:4|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:0|mId:5|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Committing [ogS:0|mId:6|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Committing [ogS:0|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:0|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Committing [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Committing [ogS:0|mId:10|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:0|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Committing [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:0|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Committing [ogS:0|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:0|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Committing [ogS:0|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:0|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:0|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Committing [ogS:0|mId:19|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Committing [ogS:0|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Committing [ogS:0|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Committing [ogS:0|mId:22|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Committing [ogS:0|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Committing [ogS:0|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Rebroadcasting... 50
-14:58:10 - Got message [ogS:1|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:1|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:1|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:2|mId:19|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Got message [ogS:1|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Got message [ogS:1|mId:9|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:1|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:1|mId:20|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Got message [ogS:1|mId:12|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:0|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:2|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:2|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:2|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:0|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:2|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:1|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:0|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:0|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Sending message [ogS:2|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Sending message [ogS:2|mId:24|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Sending message [ogS:1|mId:9|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:2|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:1|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:2|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:2|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:2|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Sending message [ogS:1|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:0|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Sending message [ogS:2|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:2|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:2|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:1|mId:13|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:2|mId:1|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Got message [ogS:1|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:0|mId:10|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Got message [ogS:1|mId:24|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:2|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:0|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Got message [ogS:1|mId:1|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Got message [ogS:1|mId:7|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:1|mId:7|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:2|mId:12|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:1|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:2|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:1|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:2|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:0|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:1|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:0|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:2|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Got message [ogS:1|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Already had this. No rebroadcast.
-14:58:10 - Sending message [ogS:1|mId:13|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:10 - Sending message [ogS:1|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:10 - Sending message [ogS:0|mId:22|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Sending message [ogS:0|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:2|mId:1|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:1|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:10 - Sending message [ogS:2|mId:11|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:10 - Sending message [ogS:1|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:10 - Sending message [ogS:0|mId:19|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:0|mId:19|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:1|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:0|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:0|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:2|mId:24|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:2|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:1|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:2|mId:12|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:0|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Got message [ogS:0|mId:1|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:5|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Sending message [ogS:2|mId:19|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:2|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Sending message [ogS:2|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:2|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Sending message [ogS:0|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:1|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Sending message [ogS:0|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:1|mId:9|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:0|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Sending message [ogS:2|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:2|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:2|mId:0|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:2|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Got message [ogS:2|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:1|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:0|mId:6|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:0|mId:4|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:2|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:0|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:2|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:1|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Got message [ogS:0|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Sending message [ogS:2|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:1|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Sending message [ogS:1|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:0|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:0|mId:10|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:2|mId:0|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:0|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Sending message [ogS:1|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:0|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:1|mId:1|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Got message [ogS:0|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Sending message [ogS:2|mId:11|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:2|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:0|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:0|mId:22|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:0|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:2|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:0|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:1|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:1|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Got message [ogS:0|mId:22|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:2|mId:23|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Sending message [ogS:1|mId:7|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Got message [ogS:2|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:0|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Sending message [ogS:2|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got message [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:11 - Committing [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:11 - Rebroadcasting... 51
-14:58:11 - -Committing- [ogS:2|mId:25|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:11 - Sending message [ogS:2|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got message [ogS:2|mId:12|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:2|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:1|mId:12|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:2|mId:23|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got message [ogS:2|mId:12|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:1|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:2|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Sending message [ogS:0|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Sending message [ogS:0|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Got message [ogS:2|mId:1|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:19|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:1|mt:4|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:0|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Sending message [ogS:1|mId:12|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Got message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:0|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Got message [ogS:2|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:0|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:1|mId:1|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Got message [ogS:2|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:0|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Got message [ogS:2|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Sending message [ogS:0|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Got message [ogS:2|mId:19|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:1|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got message [ogS:2|mId:4|mt:3|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Sending message [ogS:0|mId:6|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Sending message [ogS:0|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Got message [ogS:0|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:23|mt:5|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:15|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:6|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Sending message [ogS:0|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Got message [ogS:2|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:18|mt:3|mt:TRANSACTION|mr:|ogR:3]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:3|mId:0|mt:1026|mt:AB_TELL|mr:|ogR:4]
-14:58:11 - Committing [ogS:3|mId:0|mt:1026|mt:AB_TELL|mr:|ogR:4]
-14:58:11 - Rebroadcasting... 52
-14:58:11 - Got message [ogS:0|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:2]
-14:58:11 - Already had this. No rebroadcast.
-14:58:11 - Got message [ogS:2|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Got own message back. No rebroadcast.
-14:58:11 - Got message [ogS:0|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:11 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:0|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:2]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:3]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:24|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:0|mId:19|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:24|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Sending message [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:12 - Got message [ogS:2|mId:11|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:0|mId:10|mt:1|mt:TRANSACTION|mr:|ogR:3]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:17|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:0|mId:4|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:0|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:0|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Sending message [ogS:2|mId:25|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:12 - Got message [ogS:2|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:0]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:11|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Sending message [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:12 - Got message [ogS:0|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:6|mt:2|mt:TRANSACTION|mr:|ogR:4]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:0|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:0|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:3]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:0|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Sending message [ogS:2|mId:25|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:12 - Got message [ogS:2|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:23|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:23|mt:1|mt:TRANSACTION|mr:|ogR:0]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:0|mt:3|mt:TRANSACTION|mr:|ogR:4]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:0]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:12 - Got message [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:12 - Already had this. No rebroadcast.
-14:58:12 - Got message [ogS:2|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:3]
-14:58:12 - Got own message back. No rebroadcast.
-14:58:13 - Sending message [ogS:3|mId:0|mt:1026|mt:AB_TELL|mr:|ogR:4]
-14:58:13 - Sending message [ogS:3|mId:0|mt:1026|mt:AB_TELL|mr:|ogR:4]
-14:58:13 - Got message [ogS:2|mId:25|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:13 - Got own message back. No rebroadcast.
-14:58:13 - Got message [ogS:2|mId:25|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:13 - Got own message back. No rebroadcast.
-14:58:13 - Got message [ogS:0|mId:25|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:13 - Committing [ogS:0|mId:25|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:13 - Rebroadcasting... 53
-14:58:13 - Got message [ogS:1|mId:25|mt:937|mt:AB_TELL|mr:|ogR:4]
-14:58:13 - Committing [ogS:1|mId:25|mt:937|mt:AB_TELL|mr:|ogR:4]
-14:58:13 - Rebroadcasting... 54
-14:58:13 - Got message [ogS:1|mId:25|mt:937|mt:AB_TELL|mr:|ogR:4]
-14:58:13 - Already had this. No rebroadcast.
-14:58:14 - Got message [ogS:3|mId:0|mt:1026|mt:AB_TELL|mr:|ogR:4]
-14:58:14 - Already had this. No rebroadcast.
-14:58:14 - Sending message [ogS:0|mId:25|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:14 - Sending message [ogS:1|mId:25|mt:937|mt:AB_TELL|mr:|ogR:4]
-14:58:14 - Got message [ogS:0|mId:25|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:14 - Already had this. No rebroadcast.
-14:58:14 - Sending message [ogS:0|mId:25|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:14 - Sending message [ogS:1|mId:25|mt:937|mt:AB_TELL|mr:|ogR:4]
-14:58:24 - Got message [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:24 - Committing [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:24 - Rebroadcasting... 55
-14:58:24 - -Committing- [ogS:2|mId:26|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:25 - Got message [ogS:3|mId:1|mt:1061|mt:AB_TELL|mr:|ogR:4]
-14:58:25 - Committing [ogS:3|mId:1|mt:1061|mt:AB_TELL|mr:|ogR:4]
-14:58:25 - Rebroadcasting... 56
-14:58:25 - Sending message [ogS:2|mId:26|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:25 - Sending message [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:25 - Sending message [ogS:2|mId:26|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:26 - Sending message [ogS:3|mId:1|mt:1061|mt:AB_TELL|mr:|ogR:4]
-14:58:26 - Sending message [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:26 - Sending message [ogS:3|mId:1|mt:1061|mt:AB_TELL|mr:|ogR:4]
-14:58:26 - Got message [ogS:2|mId:26|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:26 - Got own message back. No rebroadcast.
-14:58:26 - Got message [ogS:2|mId:26|mt:963|mt:AB_TELL|mr:|ogR:4]
-14:58:26 - Got own message back. No rebroadcast.
-14:58:26 - Got message [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
-14:58:26 - Already had this. No rebroadcast.
-14:58:26 - Got message [ogS:1|mId:26|mt:957|mt:AB_TELL|mr:|ogR:4]
-14:58:26 - Committing [ogS:1|mId:26|mt:957|mt:AB_TELL|mr:|ogR:4]
-14:58:26 - Rebroadcasting... 57
-14:58:26 - Got message [ogS:0|mId:26|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:26 - Committing [ogS:0|mId:26|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:26 - Rebroadcasting... 58
-14:58:27 - Got message [ogS:3|mId:1|mt:1061|mt:AB_TELL|mr:|ogR:4]
-14:58:27 - Already had this. No rebroadcast.
-14:58:27 - Got message [ogS:1|mId:26|mt:957|mt:AB_TELL|mr:|ogR:4]
-14:58:27 - Already had this. No rebroadcast.
-14:58:27 - Sending message [ogS:1|mId:26|mt:957|mt:AB_TELL|mr:|ogR:4]
-14:58:27 - Sending message [ogS:1|mId:26|mt:957|mt:AB_TELL|mr:|ogR:4]
-14:58:27 - Sending message [ogS:0|mId:26|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:28 - Sending message [ogS:0|mId:26|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:28 - Got message [ogS:0|mId:26|mt:978|mt:AB_TELL|mr:|ogR:4]
-14:58:28 - Already had this. No rebroadcast.
-14:58:38 - CLOCK: {0=27, 1=27, 2=27, 3=2, 4=2}
-14:58:38 - BITCAKES: 963
-14:58:38 - Stopping...
+11:55:18 - Starting servent [2|localhost|1302]
+11:55:18 - Pausing for 2000 ms
+11:55:20 - Got message [ogS:1|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:20 - Rebroadcasting... 1
+11:55:20 - Got message [ogS:1|mId:21|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:20 - Rebroadcasting... 2
+11:55:20 - Got message [ogS:1|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:20 - Rebroadcasting... 3
+11:55:20 - Got message [ogS:1|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:20 - Rebroadcasting... 4
+11:55:20 - Got message [ogS:1|mId:5|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:20 - Rebroadcasting... 5
+11:55:20 - Got message [ogS:1|mId:12|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:20 - Rebroadcasting... 6
+11:55:20 - Got message [ogS:0|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:20 - Rebroadcasting... 7
+11:55:20 - Got message [ogS:1|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:20 - Rebroadcasting... 8
+11:55:20 - Got message [ogS:0|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:20 - Rebroadcasting... 9
+11:55:20 - Got message [ogS:0|mId:2|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:20 - Rebroadcasting... 10
+11:55:20 - Got message [ogS:1|mId:13|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:20 - Rebroadcasting... 11
+11:55:20 - Got message [ogS:0|mId:6|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:20 - Rebroadcasting... 12
+11:55:20 - Got message [ogS:0|mId:24|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:20 - Rebroadcasting... 13
+11:55:20 - Got message [ogS:0|mId:11|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:20 - Rebroadcasting... 14
+11:55:20 - Got message [ogS:1|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:20 - Already had this. No rebroadcast.
+11:55:20 - Got message [ogS:1|mId:16|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:20 - Rebroadcasting... 15
+11:55:20 - Got message [ogS:0|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:20 - Rebroadcasting... 16
+11:55:20 - Got message [ogS:0|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:20 - Rebroadcasting... 17
+11:55:20 - Got message [ogS:1|mId:12|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:20 - Already had this. No rebroadcast.
+11:55:20 - Got message [ogS:1|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:20 - Rebroadcasting... 18
+11:55:20 - Got message [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:20 - Rebroadcasting... 19
+11:55:20 - Got message [ogS:1|mId:19|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:20 - Rebroadcasting... 20
+11:55:20 - Got message [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:20 - Rebroadcasting... 21
+11:55:20 - Got message [ogS:1|mId:21|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:20 - Already had this. No rebroadcast.
+11:55:20 - Got message [ogS:0|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:20 - Rebroadcasting... 22
+11:55:20 - Got message [ogS:1|mId:5|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:20 - Already had this. No rebroadcast.
+11:55:20 - Got message [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:20 - Rebroadcasting... 23
+11:55:20 - Got message [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:2]
+11:55:20 - Rebroadcasting... 24
+11:55:20 - Got message [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:20 - Rebroadcasting... 25
+11:55:20 - Got message [ogS:1|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:20 - Rebroadcasting... 26
+11:55:20 - Got message [ogS:1|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:20 - Rebroadcasting... 27
+11:55:20 - Sending message [ogS:1|mId:5|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Got message [ogS:1|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Rebroadcasting... 28
+11:55:21 - Got message [ogS:0|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Rebroadcasting... 29
+11:55:21 - Got message [ogS:1|mId:16|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:1|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:1|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Rebroadcasting... 30
+11:55:21 - Got message [ogS:1|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Committing [ogS:1|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Pausing for 28000 ms
+11:55:21 - Rebroadcasting... 31
+11:55:21 - Committing # [ogS:2|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing # [ogS:2|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing # [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing # [ogS:2|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing # [ogS:2|mId:4|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing # [ogS:2|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing # [ogS:2|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing # [ogS:2|mId:7|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing # [ogS:2|mId:8|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing # [ogS:2|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing # [ogS:2|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Got message [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing # [ogS:2|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing # [ogS:2|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Rebroadcasting... 32
+11:55:21 - Committing # [ogS:2|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing # [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing # [ogS:2|mId:15|mt:3|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing # [ogS:2|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing # [ogS:2|mId:17|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing # [ogS:2|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing # [ogS:2|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing # [ogS:2|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing # [ogS:2|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing # [ogS:2|mId:22|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing # [ogS:2|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing # [ogS:2|mId:24|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Got message [ogS:1|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:1|mId:12|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Got message [ogS:0|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Rebroadcasting... 33
+11:55:21 - Sending message [ogS:1|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Got message [ogS:1|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:0|mId:18|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Rebroadcasting... 34
+11:55:21 - Sending message [ogS:1|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:0|mId:6|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Got message [ogS:0|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Rebroadcasting... 35
+11:55:21 - Got message [ogS:1|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:1|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Rebroadcasting... 36
+11:55:21 - Got message [ogS:0|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Rebroadcasting... 37
+11:55:21 - Got message [ogS:0|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Rebroadcasting... 38
+11:55:21 - Got message [ogS:1|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:1|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:1|mId:18|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Rebroadcasting... 39
+11:55:21 - Got message [ogS:1|mId:19|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:0|mId:14|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Rebroadcasting... 40
+11:55:21 - Got message [ogS:1|mId:13|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:0|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Rebroadcasting... 41
+11:55:21 - Sending message [ogS:1|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:1|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Got message [ogS:0|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Rebroadcasting... 42
+11:55:21 - Got message [ogS:0|mId:15|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Rebroadcasting... 43
+11:55:21 - Got message [ogS:0|mId:0|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:0|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Rebroadcasting... 44
+11:55:21 - Got message [ogS:0|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Rebroadcasting... 45
+11:55:21 - Got message [ogS:1|mId:15|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Rebroadcasting... 46
+11:55:21 - Got message [ogS:0|mId:1|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:0|mId:1|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:0|mId:2|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:0|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:0|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Rebroadcasting... 47
+11:55:21 - Got message [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:1|mId:5|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Got message [ogS:1|mId:15|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:1|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Got message [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:0|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Got message [ogS:1|mId:18|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:1|mId:21|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Got message [ogS:0|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:6|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Committing [ogS:0|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Rebroadcasting... 48
+11:55:21 - Sending message [ogS:0|mId:2|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:0|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:1|mId:12|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Got message [ogS:1|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:0|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Got message [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:11|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:0|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Committing [ogS:0|mId:14|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:15|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:0|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:0|mId:18|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:0|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:0|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:0|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Committing [ogS:0|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:0|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:0|mId:24|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Rebroadcasting... 49
+11:55:21 - Sending message [ogS:1|mId:19|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Got message [ogS:1|mId:3|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:1|mId:3|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:1|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Committing [ogS:1|mId:5|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:1|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Committing [ogS:1|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing [ogS:1|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Committing [ogS:1|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing [ogS:1|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing [ogS:1|mId:12|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing [ogS:1|mId:13|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:1|mId:15|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:1|mId:16|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Committing [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Committing [ogS:1|mId:18|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Committing [ogS:1|mId:19|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Committing [ogS:1|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:1|mId:21|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Committing [ogS:1|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Committing [ogS:1|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Rebroadcasting... 50
+11:55:21 - Sending message [ogS:2|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:2|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Got message [ogS:1|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:1|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:1|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:1|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:0|mId:24|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:0|mId:6|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:0|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:1|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:0|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:2|mId:15|mt:3|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:2|mId:22|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:2|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:0|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:2|mId:7|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:2|mId:15|mt:3|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:1|mId:10|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:1|mId:7|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:0|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:0|mId:24|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:1|mId:13|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:1|mId:16|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:0|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:2|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Got message [ogS:1|mId:3|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:2|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:1|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:1|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:2|mId:17|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:2|mId:22|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Got message [ogS:1|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:2|mId:7|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:1|mId:9|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:1|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:1|mId:13|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:2|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:2|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:2|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:2|mId:24|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:1|mId:21|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:2|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:2|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:2|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:0|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:0|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:2|mId:8|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:2|mId:8|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:2|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:0|mId:18|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:1|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:1|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:0|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:2|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:2|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:2|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:0|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Sending message [ogS:1|mId:16|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:2|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Sending message [ogS:2|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:2|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:21 - Got message [ogS:0|mId:6|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:0|mId:0|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:21 - Sending message [ogS:1|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Sending message [ogS:0|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:0|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:21 - Sending message [ogS:0|mId:2|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:21 - Got message [ogS:1|mId:0|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:21 - Already had this. No rebroadcast.
+11:55:21 - Sending message [ogS:0|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Sending message [ogS:0|mId:18|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:1|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:22 - Sending message [ogS:1|mId:19|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:22 - Sending message [ogS:0|mId:15|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:2|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Sending message [ogS:1|mId:3|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Sending message [ogS:2|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Sending message [ogS:0|mId:11|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Sending message [ogS:2|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got message [ogS:2|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:2|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Got message [ogS:2|mId:15|mt:3|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:0|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:0|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:0|mId:11|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Sending message [ogS:2|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Sending message [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:0|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:2|mId:4|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:0|mId:14|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:2|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:2|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:2|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Sending message [ogS:1|mId:22|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:22 - Sending message [ogS:0|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:1|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:2]
+11:55:22 - Sending message [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:0|mId:1|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:0|mId:15|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:1|mId:18|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Sending message [ogS:2|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:1|mId:8|mt:3|mt:TRANSACTION|mr:|ogR:2]
+11:55:22 - Sending message [ogS:2|mId:17|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got message [ogS:0|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Sending message [ogS:2|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Sending message [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:0|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:1|mId:2|mt:2|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Sending message [ogS:1|mId:11|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Sending message [ogS:0|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Got message [ogS:2|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:0|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:1|mId:14|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got message [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:22 - Committing [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:22 - Rebroadcasting... 51
+11:55:22 - Committing # [ogS:2|mId:25|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:22 - Got message [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:2|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Got message [ogS:2|mId:7|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:24|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:1|mId:24|mt:4|mt:TRANSACTION|mr:|ogR:2]
+11:55:22 - Sending message [ogS:0|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Sending message [ogS:1|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:1|mId:18|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Sending message [ogS:1|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Sending message [ogS:2|mId:4|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got message [ogS:0|mId:0|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Sending message [ogS:2|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Sending message [ogS:0|mId:1|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got message [ogS:0|mId:17|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Sending message [ogS:2|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Got message [ogS:0|mId:1|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Sending message [ogS:2|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Sending message [ogS:2|mId:24|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Got message [ogS:0|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:0|mId:4|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:0|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Got message [ogS:3|mId:0|mt:1021|mt:AB_TELL|mr:|ogR:4]
+11:55:22 - Committing [ogS:3|mId:0|mt:1021|mt:AB_TELL|mr:|ogR:4]
+11:55:22 - Rebroadcasting... 52
+11:55:22 - Sending message [ogS:1|mId:15|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got message [ogS:0|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Sending message [ogS:0|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Got message [ogS:2|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:0|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Got message [ogS:0|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:15|mt:3|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:0|mId:14|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got message [ogS:2|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:0|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Got message [ogS:2|mId:22|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:0|mId:8|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Sending message [ogS:0|mId:0|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got message [ogS:2|mId:8|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Sending message [ogS:1|mId:15|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got message [ogS:0|mId:2|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Got message [ogS:0|mId:20|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Got message [ogS:0|mId:5|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Sending message [ogS:1|mId:3|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Sending message [ogS:0|mId:21|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got message [ogS:2|mId:22|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:4|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:23|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:17|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:0|mId:24|mt:1|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:18|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:8|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:0|mId:16|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Already had this. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:11|mt:2|mt:TRANSACTION|mr:|ogR:4]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:22 - Got message [ogS:2|mId:16|mt:4|mt:TRANSACTION|mr:|ogR:1]
+11:55:22 - Got own message back. No rebroadcast.
+11:55:23 - Sending message [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:23 - Got message [ogS:2|mId:1|mt:1|mt:TRANSACTION|mr:|ogR:0]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:18|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:11|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:15|mt:5|mt:TRANSACTION|mr:|ogR:1]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:17|mt:3|mt:TRANSACTION|mr:|ogR:3]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:7|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Sending message [ogS:2|mId:25|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:23 - Sending message [ogS:2|mId:25|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:23 - Got message [ogS:2|mId:14|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:10|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:3|mt:5|mt:TRANSACTION|mr:|ogR:3]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:5|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:20|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:2|mt:4|mt:TRANSACTION|mr:|ogR:0]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:13|mt:1|mt:TRANSACTION|mr:|ogR:2]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:12|mt:4|mt:TRANSACTION|mr:|ogR:3]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Sending message [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:23 - Got message [ogS:2|mId:21|mt:5|mt:TRANSACTION|mr:|ogR:0]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:13|mt:2|mt:TRANSACTION|mr:|ogR:3]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:9|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:6|mt:3|mt:TRANSACTION|mr:|ogR:0]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Sending message [ogS:3|mId:0|mt:1021|mt:AB_TELL|mr:|ogR:4]
+11:55:23 - Got message [ogS:2|mId:3|mt:3|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:14|mt:1|mt:TRANSACTION|mr:|ogR:1]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:24|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:4|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:2|mId:0|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Got own message back. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:7|mt:2|mt:TRANSACTION|mr:|ogR:1]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:19|mt:4|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Got message [ogS:0|mId:22|mt:5|mt:TRANSACTION|mr:|ogR:4]
+11:55:23 - Already had this. No rebroadcast.
+11:55:23 - Sending message [ogS:3|mId:0|mt:1021|mt:AB_TELL|mr:|ogR:4]
+11:55:24 - Got message [ogS:2|mId:25|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:24 - Got own message back. No rebroadcast.
+11:55:24 - Got message [ogS:4|mId:0|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:24 - Already had this. No rebroadcast.
+11:55:24 - Got message [ogS:3|mId:0|mt:1021|mt:AB_TELL|mr:|ogR:4]
+11:55:24 - Already had this. No rebroadcast.
+11:55:24 - Got message [ogS:1|mId:25|mt:953|mt:AB_TELL|mr:|ogR:4]
+11:55:24 - Committing [ogS:1|mId:25|mt:953|mt:AB_TELL|mr:|ogR:4]
+11:55:24 - Rebroadcasting... 53
+11:55:24 - Got message [ogS:0|mId:25|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:24 - Committing [ogS:0|mId:25|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:24 - Rebroadcasting... 54
+11:55:24 - Got message [ogS:2|mId:25|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:24 - Got own message back. No rebroadcast.
+11:55:24 - Got message [ogS:1|mId:25|mt:953|mt:AB_TELL|mr:|ogR:4]
+11:55:24 - Already had this. No rebroadcast.
+11:55:25 - Sending message [ogS:0|mId:25|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:25 - Sending message [ogS:1|mId:25|mt:953|mt:AB_TELL|mr:|ogR:4]
+11:55:25 - Sending message [ogS:0|mId:25|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:25 - Sending message [ogS:1|mId:25|mt:953|mt:AB_TELL|mr:|ogR:4]
+11:55:26 - Got message [ogS:0|mId:25|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:26 - Already had this. No rebroadcast.
+11:55:36 - Got message [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:36 - Committing [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:36 - Rebroadcasting... 55
+11:55:36 - Committing # [ogS:2|mId:26|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:36 - Got message [ogS:3|mId:1|mt:1075|mt:AB_TELL|mr:|ogR:4]
+11:55:36 - Committing [ogS:3|mId:1|mt:1075|mt:AB_TELL|mr:|ogR:4]
+11:55:36 - Rebroadcasting... 56
+11:55:36 - Sending message [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:37 - Sending message [ogS:3|mId:1|mt:1075|mt:AB_TELL|mr:|ogR:4]
+11:55:37 - Sending message [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:37 - Sending message [ogS:2|mId:26|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:37 - Got message [ogS:0|mId:26|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:37 - Committing [ogS:0|mId:26|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:37 - Rebroadcasting... 57
+11:55:37 - Sending message [ogS:2|mId:26|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:37 - Got message [ogS:1|mId:26|mt:969|mt:AB_TELL|mr:|ogR:4]
+11:55:37 - Committing [ogS:1|mId:26|mt:969|mt:AB_TELL|mr:|ogR:4]
+11:55:37 - Rebroadcasting... 58
+11:55:37 - Got message [ogS:4|mId:1|mt:|mt:AB_ASK|mr:|ogR:null]
+11:55:37 - Already had this. No rebroadcast.
+11:55:37 - Got message [ogS:3|mId:1|mt:1075|mt:AB_TELL|mr:|ogR:4]
+11:55:37 - Already had this. No rebroadcast.
+11:55:38 - Sending message [ogS:3|mId:1|mt:1075|mt:AB_TELL|mr:|ogR:4]
+11:55:38 - Sending message [ogS:0|mId:26|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:38 - Sending message [ogS:0|mId:26|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:38 - Sending message [ogS:1|mId:26|mt:969|mt:AB_TELL|mr:|ogR:4]
+11:55:38 - Got message [ogS:2|mId:26|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:38 - Got own message back. No rebroadcast.
+11:55:38 - Got message [ogS:1|mId:26|mt:969|mt:AB_TELL|mr:|ogR:4]
+11:55:38 - Already had this. No rebroadcast.
+11:55:38 - Got message [ogS:2|mId:26|mt:945|mt:AB_TELL|mr:|ogR:4]
+11:55:38 - Got own message back. No rebroadcast.
+11:55:39 - Sending message [ogS:1|mId:26|mt:969|mt:AB_TELL|mr:|ogR:4]
+11:55:39 - Got message [ogS:0|mId:26|mt:961|mt:AB_TELL|mr:|ogR:4]
+11:55:39 - Already had this. No rebroadcast.
+11:55:49 - CLOCK: {0=27, 1=27, 2=27, 3=2, 4=2}
+11:55:49 - BITCAKES: 945
+11:55:49 - Stopping...

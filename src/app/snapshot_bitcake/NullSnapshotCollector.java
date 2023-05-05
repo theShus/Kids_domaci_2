@@ -30,16 +30,6 @@ public class NullSnapshotCollector implements SnapshotCollector {
     }
 
     @Override
-    public boolean isCollecting() {
-        return false;
-    }
-
-    @Override
-    public void test(String key, AbSnapshotResult abSnapshotResult) {
-
-    }
-
-    @Override
     public Map<String, AbSnapshotResult> getCollectedAbValues() {
         return null;
     }
